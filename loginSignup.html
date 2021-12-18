@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+
+    <title>Login To Your Account | Beardo</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style>
+      #maindiv {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+        border-radius: 5px;
+
+        width: 100%;
+      }
+      .logindiv {
+        margin-top: 3%;
+        border: 1px solid grey;
+        border-radius: 10px;
+        box-shadow: grey;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-right: 5%;
+        margin-left: 3%;
+      }
+
+      #flexdiv {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-between;
+      }
+
+      .forgetpassword {
+        color: red;
+      }
+      #facebookgoogle {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+
+      #facebook {
+        background-color: #3a579b;
+        color: white;
+        border: 1px solid #3a579b;
+        width: 140px;
+        height: 32px;
+
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: -1px;
+      }
+      #google {
+        margin-top: -1px;
+        font-size: 15px;
+        font-weight: 500;
+        border: 1px solid whitesmoke;
+        box-shadow: whitesmoke;
+      }
+      #fac {
+        margin-top: 12px;
+        margin-left: 20px;
+      }
+      .alreadymember {
+        font-family: Heebo, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 3px;
+        padding-top: 7%;
+      }
+
+      #email {
+        width: 250px;
+        height: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-bottom: 1px solid grey;
+      }
+      #loginemail{
+        width: 250px;
+        height: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-bottom: 1px solid grey;
+
+      }
+      #loginpassword{
+
+        width: 250px;
+        height: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-bottom: 1px solid grey;
+      }
+      #password {
+        width: 250px;
+        height: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-bottom: 1px solid grey;
+      }
+      #confirmPassword{
+        width: 250px;
+        height: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-bottom: 1px solid grey;
+
+      }
+      .submit {
+        margin-top: 30px;
+        width: 270px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+      }
+
+      .becomememberdiv {
+        margin-top: 3%;
+        border: 1px solid rgb(201, 193, 193);
+        border-radius: 10px;
+        margin-left: 13%;
+        padding-left: 3%;
+        padding-right: 3%;
+        box-sizing: border-box;
+      }
+      .becomemember {
+        font-family: Heebo, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 3px;
+        padding-top: 7%;
+      }
+      .filldetails {
+        line-height: 3px;
+      }
+      #name {
+        width: 250px;
+        height: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-bottom: 1px solid grey;
+      }
+      #lastname{
+        width: 250px;
+        height: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-bottom: 1px solid grey;
+
+      }
+      #mobile {
+        width: 250px;
+        height: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+        border-bottom: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="padding: 3%">ACCOUNT</h1>
+    <div id="maindiv">
+      <div class="becomememberdiv">
+        <p class="becomemember">BECOME A MEMBER</p>
+        <p class="filldetails">
+          Please file below details and become a member.
+        </p>
+
+        
+        <form onsubmit="signup(event)" id="myform" action="">
+        
+          <div id="flexdiv">
+            
+            <input type="text" id="name" placeholder="First name" />
+
+            <input type="text" id="lastname" placeholder="Last name" />
+          
+      
+        </div>
+
+        <div id="flexdiv">
+                   
+            <input type="email" id="email" placeholder=" Email Address" />
+
+            <input type="number" id="mobile" placeholder=" Mobile No" />
+        
+        
+        </div>
+        <div id="flexdiv">
+         
+          
+
+          
+            <input type="password" id="password" placeholder="Password" />
+
+            <input type="password"id="confirmPassword"placeholder="Confirm Password"/>
+
+          
+        
+        </div>
+        
+        <div id="flexdiv">
+        
+          <input type="submit" class="submit" value="BECOME A MEMBER" />
+        </form>
+      </div>
+      </div>
+
+
+
+      
+      <!-- Login Div -->
+       <div class="logindiv">
+        <div>
+          <p class="alreadymember">ALREADY A MEMBER?</p>
+          <p class="filldetail">
+            Please enter your email and <br />
+            password to login
+          </p>
+        </div>
+
+        <form id="loginform" onsubmit="signin(event)" action="">
+          <input type="text" id="loginemail" placeholder="Email address" />
+          <br />
+
+          <input type="password" id="loginpassword" placeholder="Password" />
+          <br />
+
+          <input type="submit" class="submit" value="Login" />
+          <p class="forgetpassword">Forgot password?</p>
+        </form>
+        <p style="color: grey; text-align: center">OR</p>
+        <br />
+
+        <div id="facebookgoogle">
+          <p id="facebook">
+            <i id="fac" class="fab fa-facebook-f"></i>
+
+            Login With Facebook
+          </p>
+
+          <img width="25px" height="25px" src="./download.png" alt="" />
+
+          <p id="google">
+             
+             Login with Google
+          </p>
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>
+
+<script src="./signup.js"></script>
