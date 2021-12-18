@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css" />
+  </head>
+  <body>
+    <div id="outerContainer">
+      <div id="left">
+        <div id="viewImage"></div>
+        <div id="sliderImage"></div>
+      </div>
+      <div id="right">
+        <div id="name">
+          <h2></h2>
+        </div>
+        <div id="price" ">
+          <p>M.R.P</p>
+          <p></p>
+          <p></p>
+          <img src="" alt="" />
+        </div>
+        <p
+          style="
+            color: red;
+            font-weight: lighter;
+            font-size: 12px;
+            margin-top: 8px;
+          "
+        >
+          (Inclusive of all taxes)
+        </p>
+
+        <div id="credTag">
+          <p style="color: white; font-weight: lighter">
+            Get 10% Cashbak using
+          </p>
+          <img src="" alt="" />
+          <p style="color: white; font-weight: lighter">CRED</p>
+        </div>
+        <div id="dis"></div>
+        <div id="buttonContainer">
+          <button id="cartButton">ADD TO CART</button>
+          <button id="buyButton">BUY NOW</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let i = 0;
+  let eleData = JSON.parse(localStorage.getItem("singleData"));
+  let k = eleData.description;
+
+  let image = document.createElement("img");
+  image.src = eleData.imageUrl[0];
+  document.querySelector("#viewImage").append(image);
+
+  eleData.imageUrl.forEach((ele) => {
+    console.log(ele);
+    let div1 = document.createElement("div");
+
+    let image1 = document.createElement("img");
+    image1.src = ele;
+
+    div1.append(image1);
+    div1.addEventListener("click", () => {
+      clearInterval(id);
+      image.src = ele;
+    });
+    document.querySelector("#sliderImage").append(div1);
+  });
+
+  function slid() {
+    document.querySelector("#viewImage").innerHTML = "";
+
+    image.src = eleData.imageUrl[i++];
+
+    document.querySelector("#viewImage").append(image);
+    if (i == eleData.imageUrl.length) {
+      i = 0;
+    }
+  }
+
+  let id = setInterval(slid, 1000);
+
+  eleData.description.forEach((ele) => {
+    let divDis = document.createElement("div");
+    let imagDis = document.createElement("img");
+    imagDis.src =
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibmV3aG9tZS9yZWQtdGlja21hcmsucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19";
+    let pDis = document.createElement("p");
+    pDis.textContent = ele;
+
+    divDis.append(imagDis, pDis);
+
+    document.querySelector("#dis").append(divDis);
+  });
+  document.querySelector("#price p:nth-child(2)").textContent =
+    eleData.cutPrice;
+  document.querySelector("#price p:nth-child(3)").textContent = eleData.price;
+  document.querySelector("#price img").src = eleData.discountSticker;
+
+  document.querySelector("#name h2").textContent=eleData.name;
+</script>

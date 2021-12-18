@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="all.css" />
+  </head>
+  <body></body>
+</html>
+<script type="module">
+  let row2 = document.getElementById("row2");
+
+  import {
+    appendData,
+    sortHighToLow,
+    sortLowToHigh,
+  } from "./component/script.js";
+
+  import allDiv from "./component/allDiv.js";
+  document.body.innerHTML = allDiv();
+  let data = JSON.parse(localStorage.getItem("shampoo"));
+
+  document.getElementById("getCount").textContent = `${data.length} RESULTS`;
+  // console.log(data);
+  appendData(data);
+
+  document.querySelector("select");
+  // shortHere(data);
+
+  let order = document.querySelector("#selectOrder");
+  order.addEventListener("change", () => {
+    if (order.value === "low to high") {
+      sortLowToHigh(data);
+      appendData(data);
+    } else {
+      sortHighToLow(data);
+      appendData(data);
+    }
+  });
+
+  // console.log(data);
+</script>
