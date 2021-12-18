@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #sliderContainer {
+      position: relative;
+  text-align: center;
+  color: white;
+  
+}
+.top-left {
+  position: absolute;
+  top: 12px;
+ }
+/* .top-right {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+} */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+#main{
+    width:30%;
+}
+#disc{
+    width:15%;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 15%;
+  right: 10px;
+  left: 5%;
+}
+#bgimg{
+    width:95%;
+    
+}
+#vip{
+    width:50%;
+}
+.bottom-right1 {
+  position: absolute;
+  bottom: 180%;
+  right: 10px;
+  left: 50%;
+}
+#disc{
+    width:20%;
+}
+.bottom-right2 {
+  position: absolute;
+  bottom: 230%;
+  right: 5px;
+  left: 75%;
+}
+.bottom-right3 {
+  position: absolute;
+  bottom: 180%;
+  right: 5px;
+  left: 75%;
+}
+
+button{
+    background-color: red;
+    margin-left: 70%;
+    border-color: red;
+    width:20%;
+    height:15%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+}
+.bottom-left {
+  position: absolute;
+  bottom:25%;
+  left: 10%;
+  width: 20%;
+}
+/* #scontainer{
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+} */
+/* slider part */
+
+</style>
+<body>
+    <div id="scontainer"> 
+    
+        
+      </div>  
+</div>
+</body>
+</html>
+
+
+
+<script>     
+    
+
+var sliderData= JSON.parse(localStorage.getItem("slider1"));
+var slidercontainer= document.getElementById("scontainer");
+// console.log(sliderData);
+
+showSlider(sliderData);
+function showSlider(data){
+    data.forEach(function(el){
+// console.log(el);
+var div = document.createElement("div");
+div.setAttribute("id","sliderContainer");
+
+var slider_bgImg = document.createElement("img");
+slider_bgImg.setAttribute("id","bgimg");
+
+var vip_imgDiv = document.createElement("div");
+vip_imgDiv.setAttribute("class","top-left");
+var slider_vipImg = document.createElement("img");
+slider_vipImg.setAttribute("id","vip");
+
+var name_div = document.createElement("div");
+name_div.setAttribute("class","bottom-left")
+
+var other_div = document.createElement("div");
+other_div.setAttribute("class","bottom-right");
+
+var main_imgdiv = document.createElement("div");
+main_imgdiv.setAttribute("class","bottom-right");
+var slider_mainImg = document.createElement("img");
+slider_mainImg.setAttribute("id","main");
+
+var disc_div = document.createElement("div");
+disc_div.setAttribute("class","bottom-right1");
+var slider_discImg = document.createElement("img");
+slider_discImg.setAttribute("id","disc");
+
+var cutp_div = document.createElement("div");
+cutp_div.setAttribute("class","bottom-right2");
+
+var price_div = document.createElement("div");
+price_div.setAttribute("class","bottom-right3");
+
+var sliderBtn= document.createElement("button");
+
+// assign
+slider_bgImg.src= el.backgroundImageUrl;
+slider_vipImg.src=el.vipImageUrl;
+name_div.innerText=el.name;
+slider_mainImg.src=el.imageUrl;
+slider_discImg.src=el.discountSticker;
+cutp_div.innerText=el.cutPrice;
+price_div.innerText=el.price;
+sliderBtn.innerText="Shop Now";
+
+// append
+vip_imgDiv.append(slider_vipImg);
+main_imgdiv.append(slider_mainImg);
+disc_div.append(slider_discImg);
+other_div.append(main_imgdiv,disc_div,cutp_div,price_div,sliderBtn);
+div.append(slider_bgImg, vip_imgDiv,name_div,other_div);
+// console.log(div);
+
+slidercontainer.append(div);
+});
+}
+
+// var body= document.querySelector("body");
+// // localStorage.setItem("slider",JSON.stringify(slidercontainer));
+// // var slider= JSON.parse(localStorage.getItem("slider"));
+// // console.log(sliderContainer[0]);
+// body.append(sliderContainer[0]);
+
+
+</script>
