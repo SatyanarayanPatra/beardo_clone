@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&family=Zen+Kaku+Gothic+Antique:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ef15a76fa0.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        background-color: black;
+        color: white;
+      }
+
+      #nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 75%;
+        margin: auto;
+      }
+      #beardoLogo {
+        height: 25px;
+        width: 15%;
+      }
+
+      #beardo {
+        width: 100%;
+        margin-top: 10px;
+        height: 30px;
+      }
+      #secondPart {
+        display: flex;
+        flex-direction: row;
+
+        height: 40px;
+        width: 50%;
+        justify-content: space-around;
+      }
+
+      #vipLogo {
+        width: 20%;
+        margin-left: 50%;
+        margin-top: 10px;
+      }
+
+      .icon {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-between;
+        margin-top: 10px;
+        position: relative;
+      }
+      #bag {
+        position: relative;
+      }
+      #bagCount {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="nav">
+      <div id="beardoLogo">
+        <img id="beardo" src="https://www.beardo.in/images/logo-white.png" />
+      </div>
+      <div id="secondPart">
+        <div id="vlogoDiv">
+          <img
+            id="vipLogo"
+            src="https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLWNsdWItbG9nby1taW4ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19"
+            alt=""
+          />
+        </div>
+
+        <div class="icon">
+          <div><i class="fas fa-search"></i></div>
+          <div id="bag">
+            <i class="fas fa-shopping-bag"></i>
+            <p id="bagCount">l</p>
+          </div>
+          <div><i class="fas fa-bars"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>

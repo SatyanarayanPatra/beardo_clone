@@ -1,0 +1,51 @@
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45%;
+  margin: auto;
+}
+#beardoLogo {
+  height: 25px;
+  width: 15%;
+}
+
+#beardo {
+  width: 100%;
+  margin-top: 10px;
+  height: 30px;
+}
+#secondPart {
+  display: flex;
+  flex-direction: row;
+
+  height: 40px;
+  width: 50%;
+  justify-content: space-around;
+}
+
+#vipLogo {
+  width: 20%;
+  margin-left: 50%;
+  margin-top: 10px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 10px;
+  position: relative;
+}
+#bag {
+  position: relative;
+}
+#bagCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: red;
+  font-weight: bold;
+}

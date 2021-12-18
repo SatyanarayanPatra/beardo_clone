@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div id="outer">
+      <div class="Container"></div>
+
+      <div id="horizontalLine"></div>
+      <div id="paymentContainer"></div>
+    </div>
+  </body>
+</html>
+<script>
+  let cartDataLocal = JSON.parse(localStorage.getItem("cartDataLocal"));
+  let i = 0;
+  cartDataLocal.forEach((ele) => {
+    let divContainer = document.createElement("div");
+    divContainer.className = "divContainer";
+
+    let left = document.createElement("div");
+    left.className = "left";
+    let image = document.createElement("img");
+    image.src = ele.imageUrl[0];
+    left.append(image);
+
+    let right = document.createElement("div");
+    right.className = "right";
+
+    let name = document.createElement("p");
+    name.innerText = ele.name;
+
+    let pricDiv = document.createElement("div");
+    pricDiv.className = "priceDiv";
+
+    let price = ele.price;
+    let cutPrice = ele.cutPrice;
+
+    let a = ele.price.split("");
+    a.shift();
+    a = +a.join("");
+
+    let b = ele.cutPrice.split("");
+    b.shift();
+    b = +b.join("");
+
+    let discount = ((b - a) / b) * 100;
+
+    let priceLine = `<p>${price}</p><p>${cutPrice}</p><p>${Math.floor(
+      discount
+    )}%   off</p>`;
+    pricDiv.innerHTML = priceLine;
+
+    let remove = document.createElement("button");
+    remove.className = "remove";
+    remove.innerText = "REMOVE";
+
+    remove.addEventListener("click", () => {
+      console.log("hi");
+      cartDataLocal.splice(i++, 1);
+      localStorage.setItem("cartDataLocal", JSON.stringify(cartDataLocal));
+      location.reload();
+    });
+
+    right.append(name, pricDiv, remove);
+    divContainer.append(left, right);
+
+    document.querySelector(".Container").append(divContainer);
+  });
+</script>

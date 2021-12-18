@@ -53,12 +53,12 @@ function appendData(value) {
             let cartData = JSON.parse(localStorage.getItem("cartDataLocal")) || [];
             cartData.push(ele)
             localStorage.setItem("cartDataLocal", JSON.stringify(cartData))
-            window.location.href = "cart.html"
+            window.location.href = ""
         })
 
         giftBox.addEventListener("click", () => {
             localStorage.setItem("singleData", JSON.stringify(ele));
-            window.location.href = "view.html"
+            window.location.href = "../viewProduct/view.html"
         })
 
 

@@ -1,6 +1,6 @@
 function allDiv() {
 
-    return `<div id="container">
+  return `<div id="container">
     <div id="row1">
     <h2 id="getCount" style="color: red; font-weight: bolder"></h2>
       <div id="divRight">
