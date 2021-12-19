@@ -6,14 +6,15 @@
 
 ## Authors
 
-### Kanhaiya Kumar
-### Sandeep Kumar Murmu
-### Sireesha Ravulapalli
-### Md Abdullah Ansari
-### Satyanarayan Patra
+#### Kanhaiya Kumar
+#### Sandeep Kumar Murmu
+#### Sireesha Ravulapalli
+#### Md Abdullah Ansari
+#### Satyanarayan Patra
+
+
 
 ## TeachStack used 
-
 - Javascript 
 - Html 
 - CSS
