@@ -108,62 +108,52 @@
 <script type="module">
   let subtotal = 0;
   let gTotal = 0;
-  let cartDataLocal = JSON.parse(localStorage.getItem("cartDataLocal"));
+  let cartDataLocal = JSON.parse(localStorage.getItem("buyItem"));
+
+  console.log(cartDataLocal);
   let i = 0;
-  cartDataLocal.forEach((ele) => {
-    let divContainer = document.createElement("div");
-    divContainer.className = "divContainer";
+  // cartDataLocal.forEach((ele) => {
+  let divContainer = document.createElement("div");
+  divContainer.className = "divContainer";
 
-    let left = document.createElement("div");
-    left.className = "left";
-    let image = document.createElement("img");
-    image.src = ele.imageUrl[0];
-    left.append(image);
+  let left = document.createElement("div");
+  left.className = "left";
+  let image = document.createElement("img");
+  image.src = cartDataLocal.imageUrl[0];
+  left.append(image);
 
-    let right = document.createElement("div");
-    right.className = "right";
+  let right = document.createElement("div");
+  right.className = "right";
 
-    let name = document.createElement("p");
-    name.innerText = ele.name;
+  let name = document.createElement("p");
+  name.innerText = cartDataLocal.name;
 
-    let pricDiv = document.createElement("div");
-    pricDiv.className = "priceDiv";
+  let pricDiv = document.createElement("div");
+  pricDiv.className = "priceDiv";
 
-    let price = ele.price;
-    let cutPrice = ele.cutPrice;
+  let price = cartDataLocal.price;
+  let cutPrice = cartDataLocal.cutPrice;
 
-    let a = ele.price.split("");
-    a.shift();
-    a = +a.join("");
-    subtotal += a;
-    let b = ele.cutPrice.split("");
-    b.shift();
-    b = +b.join("");
-    gTotal += b;
+  let a = cartDataLocal.price.split("");
+  a.shift();
+  a = +a.join("");
+  subtotal += a;
+  let b = cartDataLocal.cutPrice.split("");
+  b.shift();
+  b = +b.join("");
+  gTotal += b;
 
-    let discount = ((b - a) / b) * 100;
+  let discount = ((b - a) / b) * 100;
 
-    let priceLine = `<p>${price}</p><p>${cutPrice}</p><p>${Math.floor(
-      discount
-    )}%   off</p>`;
-    pricDiv.innerHTML = priceLine;
+  let priceLine = `<p>${price}</p><p>${cutPrice}</p><p>${Math.floor(
+    discount
+  )}%   off</p>`;
+  pricDiv.innerHTML = priceLine;
 
-    let remove = document.createElement("button");
-    remove.className = "remove";
-    remove.innerText = "REMOVE";
+  right.append(name, pricDiv);
+  divContainer.append(left, right);
 
-    remove.addEventListener("click", () => {
-      console.log("hi");
-      cartDataLocal.splice(i++, 1);
-      localStorage.setItem("cartDataLocal", JSON.stringify(cartDataLocal));
-      location.reload();
-    });
-
-    right.append(name, pricDiv, remove);
-    divContainer.append(left, right);
-
-    document.querySelector(".Container").append(divContainer);
-  });
+  document.querySelector(".Container").append(divContainer);
 
   import productHead from "../component/productHead.js";
   let headContainer = document.getElementById("mainContainer");
