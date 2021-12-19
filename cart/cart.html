@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://www.beardo.in/images/shortcut-icon.png"
+    />
+    <title>Beardo | Male Grooming Experts</title>
     <link rel="stylesheet" href="cart.css" />
     <link rel="stylesheet" href="../css/productHeadFoot.css" />
     <style>
@@ -186,7 +190,6 @@
   }`;
 
   document.querySelector("#placediv").addEventListener("click", () => {
-    alert("thankyou Your order has been placed");
     document.querySelector(".Container").innerHTML =
       "<h1>Your Cart is Empty</h1>";
 
@@ -198,6 +201,6 @@
      `;
     cartDataLocal = [];
     localStorage.setItem("cartDataLocal", JSON.stringify(cartDataLocal));
-    window.location.href = "../products/landingpage.html";
+    window.location.href = "paymentPage.html";
   });
 </script>
