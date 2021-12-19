@@ -1,0 +1,78 @@
+#mainContainer {
+  display: flex;
+  flex-direction: row;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+#nav2Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 20px;
+}
+* {
+  background: black;
+  color: white;
+}
+#productsItem {
+  display: none;
+  grid-auto-flow: column;
+  grid-column-gap: 50px;
+  background: white;
+  border: 1px solid yellow;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+#productsItem > div {
+  border: 1px solid teal;
+  background: white;
+  color: black;
+}
+.showProduct > div {
+  background: white;
+}
+.showProduct {
+  display: none;
+  background: white;
+  grid-auto-flow: column;
+  grid-column-gap: 50px;
+  background: white;
+  /* border: 1px solid yellow; */
+  color: black;
+}
+.proImage {
+  background: white;
+}
+.Para {
+  background: white;
+  color: black;
+}
+#search {
+  background: white;
+  height: 10px;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+}
+.nav2Img {
+  width: 10%;
+  height: 30px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.hLogo {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-left: 0%;
+}
+
+.hLogo > img:first-child,
+.hLogo > img:nth-child(2) {
+  width: 30%;
+}

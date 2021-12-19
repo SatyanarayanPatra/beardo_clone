@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.beardo.in/images/shortcut-icon.png"
+    />
+    <title>Beardo | Male Grooming Experts</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  //combo details
+  let combos = [
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLWZhY2Utc2NydWItd2FzaC0xMDgweDg1NS0wMi0xMTY5OS0zNjg2My5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8taGFpci10aGlja2VuaW5nLWhlbXAtbWlyYWNsZS1vaWwtYmFjay0wMy0yLTM1OTg4LTM2ODY0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8taGFpci10aGlja2VuaW5nLWhlbXAtbWlyYWNsZS1vaWwtYmFjay0wMi0xLTM1OTkyLTM2ODY1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vaWwtMzU3NDAtMzY4NjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLXNvYXAtMDItMTE4MzItMzY4NjcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9saXAtYmFsbS1ib3gtMTA4MHg4NTUtMDMtMzY0NDUtMzY4NjguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9saXAtYmFsbS1ib3gtMTA4MHg4NTUtMDMtMzY0NDUtMzY4NjguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWVnYS1oZW1wLWNvbWJvLTEwODB4ODU1LTM2ODQ5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy84MDNjNDNmYy0yNTZmLTQ3OTQtOGZmZS05NDgyMmI0ZDY5OWYtMzU4MTAtMzY4NTIuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWlyYWNsZS1oZW1wLW9pbC0xMDgweDg1NS0wMS0zNjIwMi0zNjg1My5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Mega Hemp Combo",
+      cutPrice: "₹1791",
+      price: "₹799",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU1LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Beardo HEMP Facewash Scrub (100ml), HEMP Styling Hair Oil For Men (100ml), Daily Repair Hemp Beard Oil (30ml), Beardo HEMP Soap (125g), & Beardo Hemp Lip balm (7g)",
+        "HEMP: Nature's Miracle for Healthy Skin",
+        "For Youthful and Clear Skin",
+        "Essential nutrients for beard repair",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGUtdGFuLWNvbWJvLWZvci1tZW4tMTA4MHg4NTUtMzcxNzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMTIwNDQtMzcxNzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wMS0zNTQ1OS0zNzE3Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDQtMTE1ODctMzcxNzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wMi0zNTQ2MC0zNzE3NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wNS0zNTQ2My0zNTk2NS0zNzE3NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDItMTE1ODUtMzcxNzYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wNC0zNTQ2Mi0zNzE3Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDUtMTE1OTAtMzcxNzguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wOC0zNTQ2Ni0zNzE3OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo De-Tan Combo for Men",
+      cutPrice: "₹625",
+      price: "₹299",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: De-Tan Scrub (100g) & De-Tan Facewash (100ml)",
+        "Exfoliates and deep cleanses skin",
+        "Removes tan and dead cells",
+        "Moisturizes and nourishes skin without making it dry",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGUtdGFuLWNvbWJvLWZvci1tZW4tMTA4MHg4NTUtMzcxNzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMTIwNDQtMzcxNzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wMS0zNTQ1OS0zNzE3Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDQtMTE1ODctMzcxNzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wMi0zNTQ2MC0zNzE3NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wNS0zNTQ2My0zNTk2NS0zNzE3NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDItMTE1ODUtMzcxNzYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wNC0zNTQ2Mi0zNzE3Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDUtMTE1OTAtMzcxNzguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS1zY3J1Yi0xMDgweDg1NS0wOC0zNTQ2Ni0zNzE3OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo De-Tan Combo for Men",
+      cutPrice: "₹625",
+      price: "₹299",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: De-Tan Scrub (100g) & De-Tan Facewash (100ml)",
+        "Exfoliates and deep cleanses skin",
+        "Removes tan and dead cells",
+        "Moisturizes and nourishes skin without making it dry",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9mYXYtMTIxNjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82OWJlYTA1MS1mMjgyLTQ2ZWItYTc2NC1hN2Y0OTUzY2JmNTAtMTM0NzUuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItYmVhcmQtb2lsLWltYWdlLTAxLTYxMDItOTU1My5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tYm9hci1iZWFyZC1icnVzaC0wMS1taW4tNzMzNS05NTU0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9saXAtbGlnaHRlbmVyLWltYWdlLTAxLTU4NTctOTU1Ni5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tYm9keXdhc2gtaW1hZ2UtMDEtNjEyOS05NTU3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81MC05NjEzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctZmFjZXdhc2gtMTA4MHg4NTUtMS0xMjE2Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1iYWNrLTAxLTk3MTIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1iYWNrLTAyLTk3MTMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGUtdGFuLWJvZHktd2FzaC1iYWNrLTk3MTQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbGlwLWxpZ2h0ZW5lci1ib3gtc2lkZS0xLTk3MTUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbGlwLWxpZ2h0ZW5lci1ib3gtc2lkZS0yLTk3MTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctZmFjZXdhc2gtMTA4MHg4NTUtOC0xMjE2My5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Don Beardo's Favorites Combo",
+      cutPrice: "₹2255",
+      price: "₹1105",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUxLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Godfather Beard Oil (30ml), De-Tan Bodywash (200ml), Lip Lightener (7g), Ultraglow Facewash (100ml)",
+        "XXtra Strong Hair Wax (50g), Boar Beard Brush",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1mYWNld2FzaC1jb21iby0xMDgweDg1NS0zNzIxMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDEtMTE2MTMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtZmFjZXdhc2gtMTA4MHg4NTUtMTMwOTgtMzcyMTQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctZmFjZXdhc2gtMTA4MHg4NTUtMS0xMTg0Ni5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xMC0xMjg2MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Ultimate Facewash Combo",
+      cutPrice: "₹900",
+      price: "₹399",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoiZG90ZF9iYWRnZXMvNTYucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      description: [
+        "Includes: De-Tan Facewash (100ml), Charcoal Facewash (100ml) & Ultraglow Facewash (100ml)",
+        "Removes tan and dead cells",
+        "Keeps your face clean & fresh",
+        "Brightens the skin tone",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9uaWdodC1jYXJlLWNvbWJvLTEwODB4ODU1LTEtMTI2NDYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMTIwNDQtMS0xMjY1MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9saXAtbGlnaHRlbmVyLTEwODB4ODU1LTEyMTI3LTEtMTI2NTIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTAxLTExNDY2LTEtMTI2NTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdW5kZXJleWUtY3JlYW0tYS1iYW5uZXItMTA4MC14LTg1NS0xMTc0MS0xLTEyNjQ3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDQtMTE1ODctMi0xMjY1OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8yLTExOTUyLTEtMTI2NTMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8yLTExOTUyLTEtMTI2NTMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTAyLTExNDY3LTEtMTI2NTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bmRlci1leWUtY3JlYW0tMDMtMTE0MDItMS0xMjY0OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDUtMTE1OTAtMS0xMjY1MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTEwLTExNDczLTEtMTI2NTguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbGlwLWxpZ2h0ZW5lci1ib3gtc2lkZS0xLTk5NjItMS0xMjY1NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbGlwLWxpZ2h0ZW5lci1ib3gtc2lkZS0yLTk5NjMtMS0xMjY1NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Night Care Combo for Men",
+      cutPrice: "₹1725",
+      price: "₹594",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzY2LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Vitamin C Face Serum (30ml), Lip Lightener (7g) , De-Tan Facewash (100ml) & Under Eye Cream (20ml)",
+        "Lightens and brightens skin",
+        "Helps lighten under eye dark circles",
+        "Keeps skin soft, smooth & moisturized",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLTEwODB4ODU1LTEyMzM3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLWltYWdlLTAyLTYwNzcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLWltYWdlLTAzLTYwNzguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLXNlcnVtLWltYWdlLTAxLTExNjQxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLWltYWdlLTA1LTYwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3Ytc2hhbXBvby0wMy05ODA1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3Ytc2hhbXBvby0wMi05ODA2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3Ytc2hhbXBvby0wMi05ODA2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tb25pb24tb2lsLWJhY2stMDEtOTgwOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tb25pb24tb2lsLWJhY2stMDItOTgwOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Dandruff Control Combo",
+      cutPrice: "₹1743",
+      price: "₹799",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Onion Oil (25ml), Apple Cider Vinegar Shampoo (300ml), Hair Serum (50ml) & Pouch",
+        "Promotes hair strength & growth",
+        "Prevents and Cures Dandruff",
+        "Gives hair an attractive shine",
+      ],
+    },
+
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1wZXJmdW1lLWJvZHktc3ByYXktdHJpby0xMDgweDg1NS0zNzI2OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1wZXJmdW1lLWJvZHktc3ByYXktdHJpby0xMDgweDg1NS0zNzI2OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9zcHktZGVvLTA3LTc5NjAtMzY3ODYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTM2NDIyLTM2Nzg3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tYWZpYS1kaW8tMDctNzk1MS0zNjc4OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZW8tYm9keS1zcHJheS1naWZ0LWJveC0xMDgweDg1NS1saWdodC1iZy0wNC0zNjc4MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Ultimate Perfume Body Spray Trio",
+      cutPrice: "₹897",
+      price: "₹499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQ0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Beardo MAFIA Perfume Body Spray (120ml),Beardo Don Perfume Body Spray (120ml),Beardo SPY Perfume Body Spray (120ml)",
+        "Stands out from other fragrances",
+        "Strong & long-lasting",
+        "Fights body odour",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9mYWNlLXRoZS1zdW4tc3RhcnRlci1raXQtMTA4MHg4NTUtMTMxMjguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDEtMTE2MTguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9zcHktZGlvLTAxLTc5NTQtMS0xMDc5OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWF4LXN1bnNjcmVlbi1zcHJheS13aXRoLWJveC0xMDgwMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtMTA4MHg4NTUtMDUtMTE2MTkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tc3B5LWJvZHktc3ByYXktMDItOTg3MS0xMDgwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tc3B5LWJvZHktc3ByYXktMDItOTg3MS0xMDgwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tc3B5LWJvZHktc3ByYXktMDItOTg3MS0xMDgwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Face The Sun Starter Kit",
+      cutPrice: "₹973",
+      price: "₹489",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Max Sunscreen Spray (50ml), Spy Body Perfume (120ml) & De-Tan Facewash (100ml)",
+        "Very high UVA, UVB & IR protection with PA +++ rating",
+        "Strong & long-lasting",
+        "Removes tan and dead cells",
+      ],
+    },
+
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItY29tYm8tMTA4MHg4NTUtMTIzNjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItY29tYm8taW1hZ2UtMDMtMTA5NDIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItY29tYm8taW1hZ2UtMDUtMTA5NDMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItY29tYm8taW1hZ2UtMDMtMTA5NDIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItY29tYm8taW1hZ2UtMDItNjA1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1iYWNrLTAxLTk4MTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1iYWNrLTAyLTk4MTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItYmVhcmQtd2FzaC1pbWFnZS0wMi0xMDk0NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Godfather Combo (Godfather Oil 30ml, Godfather Wash 100ml)",
+      cutPrice: "₹600",
+      price: "₹349",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Contains Beard Wash & Beard Oil",
+        "Cleanses and removes dirt",
+        "Gives complete nourishment",
+        "Makes your beard soft & smooth",
+      ],
+    },
+
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtZmFjZXdhc2gtcGVlbC1vZmYtbWFzay1jb21iby0xMDgweDg1NS0xMzM0MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtZmFjZXdhc2gtMTA4MHg4NTUtMTMzNDIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtZmFjZXdhc2gtMTA4MHg4NTUtMTMzNDIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTEyODQ4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTItMTI4NTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTItMTI4NTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Activated Charcoal Facewash & Peel Off Mask Combo",
+      cutPrice: "₹625",
+      price: "₹299",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Charcoal Facewash (100ml) & Charcoal Peel Off Mask (100g)",
+        "Removes dirt",
+        "Unclogs skin pores",
+        "Deep cleanses skin",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1wZXJmdW1lLWNvbWJvLTEwODB4ODU1LTEtMzUxOTEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItcGVyZnVtZS0xMDgweDg1NS0xMjU3OS0zNTE4Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ibGFjay1tdXNrLTEwODB4ODU1LTM1MDMwLTM1MTkyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90aHVtYm5haWwtMzQ5MjQtMzUxOTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zLTExNDU2LTEtMzUxODguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItcGVyZnVtZS0wNC04NjE5LTItMzUxODkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItcGVyZnVtZS0wMy04NjE4LTItMzUxOTAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ibGFjay1tdXNrLXBlcmZ1bWUtYS1iYW5uZXItMTQtMjM5NDAtMzUxOTMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ibGFjay1tdXNrLWVhdS1kZS1wZXJmdW1lLTEwODB4ODU1LTAzLTEyOTk2LTM1MTk0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ibGFjay1tdXNrLWVhdS1kZS1wZXJmdW1lLTEwODB4ODU1LTA0LTEyOTk3LTM1MTk1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8yYi0zNDkyNS0zNTE5Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTM0OTI2LTM1MTk4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo Ultimate Perfume Combo",
+      cutPrice: "₹3600",
+      price: "₹999",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzcyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Godfather Perfume (100ml), Whisky Smoke Perfume (100ml) & Black Musk (100ml)",
+        "Strong & long-lasting",
+        "Ideal for special occasions",
+        "Musky, Fresh, Woody",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbGwtbmlnaHQtcGVyZnVtZS1kdW8tMTA4MHg4NTUtMTMwNTguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYXJrLXNpZGUtcGVyZnVtZS1pbWFnZS0wMi02MTk4LTEwNTIxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYXJrc2lkZS1hLTEwODB4ODU1LTEtOTMzNi0xMDUyMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGFyay1zaWRlLXBlcmZ1bWUtMDMtODc4Mi0xMDUyMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGFyay1zaWRlLXBlcmZ1bWUtMDQtODc4My0xMDUyNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItcGVyZnVtZS0wMi04NjEwLTEwNTI1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItcGVyZnVtZS0wMi04NjEwLTEwNTI1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo All-Night Perfume Duo",
+      cutPrice: "₹2700",
+      price: "₹799",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzcwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Dark Side Perfume (100ml) & Godfather Perfume (100ml)",
+        "EDP(high concentrate perfume) instead of EDT (regular perfumes)",
+        "Strong & long-lasting",
+        "Refreshing & manly fragrance",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ncm93dGgtcHJvLWtpdC0xMDgweDg1NS0xMTk4NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1hY3RpdmF0b3ItYS1iYW5uZXItMS0xMDEzNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ncm93dGgta2l0LWltYWdlcy0xMDEzNy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1hY3RpdmF0b3ItYS1iYW5uZXItMTA4MHg4NTUtMDMtOTY5Ny0xMDEyOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wcm9raXQtMTAxMjcuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90aGUtaXJpc2gtcm95YWxlLWJlYXJkLXdhc2gtaW1hZ2UtMDEtNTg4Ny0xMDEwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1hY3RpdmF0b3ItYS1iYW5uZXItMTA4MHg4NTUtMDExLTEtOTcwNi0xMDEwMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1oYWlyLWdyb3d0aC1vaWwtaW1hZ2UtMDItNjExMC0xMDEwNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS1ncm93dGgtcm9sbC1vbi1pbWFnZS0wMS01OTQ0LTEwMTA1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tYmVhcmQtZ3Jvd3RoLXByby1raXQtMTA4MHg4NTUtMTAwNzguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kb24tYmVhcmRvLWJlYXJkLWdyb3d0aC1wcm8ta2l0LWJhY2stMTAxNDQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Don Beardo's Beard Growth Pro Kit",
+      cutPrice: "₹2095",
+      price: "₹888",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoiZG90ZF9iYWRnZXMvNTgucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      description: [
+        "Perfect for an all-round beard regime",
+        "Promotes thicker & fuller beard growth",
+        "Stimulates inactive hair follicles",
+        "Includes: Beard & Hair Growth Oil (50ml), Beard Activator, Irish Beard Wash & Growth Roll On",
+      ],
+    },
+
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXRhbWluLWMtY29tcGxldGUtY2FyZS1raXQtMTA4MHg4NTUtMTM0MzUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTAxLTExNTA0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9zaGVldC1tYXNrYS0xMTUyOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLWEtYmFubmVyLTAxLTExMDUzLTExNTE1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXRhbWluLWMtZmFjZS13YXNoLWEtYmFubmVyLTAxLTExNTEwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTAyLTExNTA1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGF0c2FwcC1pbWFnZS0yMDIxLTA1LTI3LWF0LTEwNTgzMi1hbS0xLTExNTIzLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9mdy1hLTItMTE1MjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXRhbWluLWMtYm9keS15b2d1cnQtYS1iYW5uZXItMDgtMTEwOTAtMTE1MTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW1hc2stYS1iYW5uZXItMDItMTEzMjAtMTE1MjAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW1hc2stYS1iYW5uZXItMDEtMTEwMTAtMTE1MjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXRhbWluLWMtZmFjZS13YXNoLWEtYmFubmVyLTA4LTExNTEzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTEwLTExNTA2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo Vitamin C Complete Care Kit",
+      cutPrice: "₹1458",
+      price: "₹699",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Vit-C Power-Foam Facewash (130ml), Vitamin C Face Serum (Night Shot) (30ml)",
+        "Vit-C Body Yogurt (120g) & Vitamin C Sheet Mask (1qty)",
+        "Helps brighten skin & restore youthful glow",
+        "Revives dull & tired skin",
+      ],
+    },
+
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZ2VsLWltYWdlLTAyLTU3MDctMTE0MjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZ2VsLWltYWdlLTAyLTU3MDctMTE0MjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLTEwODB4ODU1LTAxLTEwOTk2LTEtMTE0MjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZ2VsLWltYWdlLTAzLTU3MDgtMTE0MzYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZ2VsLWltYWdlLTA0LTU3MTEtMTE0MzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLWEtYmFubmVyLTA5LTEwOTk3LTEtMTE0MzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLWEtYmFubmVyLTEzLTExMDAwLTExNDMyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tYWxvZS12ZXJhLWdlbC0zLTg3NzAtMS0xMTQyOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLTEwODB4ODU1LTAyLTExMDA0LTEtMTE0MzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Aloe Vera Essentials for Dry Skin",
+      cutPrice: "₹549",
+      price: "₹299",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQ2LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Aloevera Facewash (100ml) & Aloe Vera Gel For Hair, Face & Beard (50g)",
+        "Cleanses & refreshes without drying",
+        "Keeps skin hydrated & soft",
+        "Nourishes & moisturizes",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tb29jaC1zd2FnLWNvbWJvLWEtYmFubmVyLTAzLW1pbi03MTgzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGF0c2FwcC1pbWFnZS0yMDIwLTA5LTI1LWF0LTQyNjIxLXBtLTcxMDguanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGF0c2FwcC1pbWFnZS0yMDIwLTA5LTI1LWF0LTQyNjIwLXBtLTcxMTMuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1tdXN0YWNoZS13YXgtZXh0cmEtc3Ryb25nLTAxLTcxMTEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS1ncm93dGgtcm9sbC1vbi1pbWFnZS0wMS03MTEyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS13YXgtZXh0cmEtc3Ryb25nLTAyLTk5MDQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS1ncm93dGgtcm9sbC1vbi0wMi05OTA1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS1ncm93dGgtcm9sbC1vbi0wMy05OTA2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo Mooch Swag Combo",
+      cutPrice: "₹1194",
+      price: "₹549",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Mooch Swag Mug, Extra Strong Mustache Beard Wax & Mustache Roll On",
+        "Protects the Mustache with Ceramic Barrier",
+        "Helps shape your mustache instantly",
+        "Helps Grow Mustache Hair",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nZXQtaGVtcHktY29tYm8tMTA4MHg4NTUzMy0zNjM4MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLWZhY2V3YXNoLXNjcnViLTEwODB4ODU1LTEzMzExLTEzMzU3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLWJlYXJkLW9pbC13aXRoLWJveC0xMDgweDg1NS0zNTc4OS0zNjM3MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8taGVtcC1zb2FwLTEwODAteC04NTUtMTE4MzEtMS0xMzM2MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLWZhY2Utc2NydWItYS1iYW5uZXItMTA4MC14LTg1NS0xMjY2OS0xMzM1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8wM2JlYXJkby1iZWFyZC1oZW1wLW9pbC1hLWJhbm5lci0xMDgwLXgtODU1LTA2Mi0zNTczNC0zNjM2OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLXNvYXAtYS1iYW5uZXItMDctMTI2NjQtMS0xMzM2MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8wNy1iZWFyZG8tYmVhcmQtaGVtcC1vaWwtYS1iYW5uZXItMTA4MC14LTg1NS0wNS0zNTczNy0zNjM2OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLXNvYXAtYS1iYW5uZXItMDYtMTI2NjctMTMzNjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLWZhY2Utc2NydWItd2FzaC0xMDgweDg1NS0wMi0xMTY5OS0xMzM1OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vaWwyLTM1NzQxLTM2MzcxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLXNvYXAtMDItMTE4MzItMS0xMzM2My5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Get Hempy Combo",
+      cutPrice: "₹1093",
+      price: "₹349",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzY4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: BEARDO DAILY REPAIR HEMP BEARD OIL (30ML), Hemp Soap (125g) & Hemp Facewash Scrub (100ml)",
+        "Exfoliates & refreshes gently",
+        "Heals & calms irritated skin",
+        "Helps keep skin soft, fresh & moisturized",
+      ],
+    },
+
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY25lLWNvbnRyb2wtZmFjZXdhc2gtYWNuZS1jb250cm9sLWZhY2UtZ2VsLWNvbWJvLTEwODB4ODU1LTEyNDIwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY25lLWNvbnRyb2wtdHVybWVyaWMtZmFjZS13YXNoLTAxLW1pbi03MjYyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY25lLWNvbnRyb2wtdHVybWVyaWMtZmFjZS1nZWwtMDEtbWluLTcyNjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY25lLWNvbnRyb2wtdHVybWVyaWMtZmFjZS13YXNoLTAzLW1pbi03MjYzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY25lLWNvbnRyb2wtdHVybWVyaWMtZmFjZS13YXNoLTAyLW1pbi03MjY0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY25lLWNvbnRyb2wtdHVybWVyaWMtZmFjZS13YXNoLTA2LW1pbi03MjY1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY25lLWNvbnRyb2wtdHVybWVyaWMtZmFjZS1nZWwtMDMtbWluLTcyNjcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY25lLWNvbnRyb2wtdHVybWVyaWMtZmFjZS1nZWwtMDItbWluLTcyNjguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY25lLWNvbnRyb2wtdHVybWVyaWMtZmFjZS1nZWwtMDYtbWluLTcyNjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbnRpLWFjbmUtZmFjZS13YXNoLXR1cm1lcmljLTAzLTg1MjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Acne Control Facewash & Acne Control Face Gel Combo",
+      cutPrice: "₹749",
+      price: "₹349",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Acne Control Facewash (100g) & Acne Control Face Gel (50g)",
+        "Helps reduce acne, scars & pigmentation",
+        "Heals & soothes the skin",
+        "Removes dirt & excess oil",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9zZWxmLWNhcmUtZXNzZW50aWFsLWNvbWJvLTEwODB4ODU1LTEyOTEzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtcGVlbC1vZmYtbWFzay0xMDgweDg1NS0xMjkxNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLTEwODB4ODU1LTAxLTEwOTk2LTExMDY2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLWEtYmFubmVyLTAxLTExMDUzLTExMDY4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW1hc2stYS1iYW5uZXItMDUtMTEwMDktMTEwNzcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtaW1hZ2UtMDEtNjgzMy0xMTA4Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Self Care Essentials",
+      cutPrice: "₹2306",
+      price: "₹999",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU3LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Under Eye Gel (12g), Charcoal Peel Off Mask (100g), Ultraglow Bodywash (200ml)",
+        "Aloe Vera Facewash (100ml), Onion Oil (25ml), Vit-C Sheet Mask , Vit-C Body Yogurt (120g)",
+      ],
+    },
+  ];
+
+  //beard product details
+  let beard = [
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1oYWlyLWdyb3d0aC1vaWwtMTA4MHg4NTUtMTE5ODkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8yLTM0OTAxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTM0OTAyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTM0OTAzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTM1NTIxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTM0OTA1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy84LTM0OTA2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTM0OTA3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xMC0zNTUyOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xMS0zNDkwOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Beard & Hair Growth Oil (50ml)",
+      qty: ["30ml", "3X 30ml"],
+      cutPrice: "₹1194",
+      price: "₹549",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Mooch Swag Mug, Extra Strong Mustache Beard Wax & Mustache Roll On",
+        "Protects the Mustache with Ceramic Barrier",
+        "Helps shape your mustache instantly",
+        "Helps Grow Mustache Hair",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItb2lsLTEwODB4ODU1LTEtMTIwMjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGF0c2FwcC1pbWFnZS0yMDIxLTAyLTA5LWF0LTEwNDQzMy1hbS0yLTEwMDkyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1hLWJhbm5lci0wMi0zNTA1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==0",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1hLWJhbm5lci0wNC0zNTA1OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1hLWJhbm5lci0wNS0zNTA2MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1hLWJhbm5lci0wMy0zNTA2MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nZi1jYXJvdXNlbC04LTExNDQzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9jYXJhb3VzZWwtaW1hZ2UtOS0xMTQ0NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1iYWNrLTAxLTk3MDguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ29kZmF0aGVyLWJlYXJkLW9pbC1iYWNrLTAyLTk3MDkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Godfather Beard oil (30ml)",
+      qty: ["30ml"],
+      cutPrice: "350",
+      price: "239",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzMzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Prevents dryness & flakiness",
+        "Non-greasy beard oil that conditions deeply",
+        "Keeps beard smooth, shiny & soft",
+        "Keeps beard well-groomed & fragrant",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ncm93dGgtcHJvLWtpdC0xMDgweDg1NS0xMTk4NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1hY3RpdmF0b3ItYS1iYW5uZXItMS0xMDEzNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ncm93dGgta2l0LWltYWdlcy0xMDEzNy5qcGVnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1hY3RpdmF0b3ItYS1iYW5uZXItMTA4MHg4NTUtMDMtOTY5Ny0xMDEyOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wcm9raXQtMTAxMjcuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90aGUtaXJpc2gtcm95YWxlLWJlYXJkLXdhc2gtaW1hZ2UtMDEtNTg4Ny0xMDEwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1hY3RpdmF0b3ItYS1iYW5uZXItMTA4MHg4NTUtMDExLTEtOTcwNi0xMDEwMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1oYWlyLWdyb3d0aC1vaWwtaW1hZ2UtMDItNjExMC0xMDEwNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS1ncm93dGgtcm9sbC1vbi1pbWFnZS0wMS01OTQ0LTEwMTA1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tYmVhcmQtZ3Jvd3RoLXByby1raXQtMTA4MHg4NTUtMTAwNzguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Don Beardo's Beard Growth Pro Kit",
+      qty: [],
+      price: "₹2095",
+      cutPrice: "₹888",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzMzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Perfect for an all-round beard regime",
+        "Promotes thicker & fuller beard growth",
+        "Stimulates inactive hair follicles",
+        "Includes: Beard & Hair Growth Oil (50ml), Beard Activator, Irish Beard Wash & Growth Roll On",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1oYWlyLWdyb3d0aC1vaWwtMTA4MHg4NTUtMTE5ODkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTM0OTA3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xMS0zNDkwOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ3Jvd3RoLW9pbC01MG1sLWJhY2stMDEtOTc3MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ3Jvd3RoLW9pbC01MG1sLWJhY2stMDItOTc3MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1oYWlyLWdyb3d0aC1vaWwtMTA4MHg4NTUtMTE5ODkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Beard & Hair Growth Oil (50ml)",
+      qty: ["50ml", "2X 50ml", "3X 50ml"],
+      cutPrice: "₹750",
+      price: "₹499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzMzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Helps promote hair & beard growth​",
+        "All Natural ingredients helps grow Thicker, Healthier and Shinier Beard ​.",
+        "Ultimate Solution for Uneven Beard and Hair Growth, helps get rid of patchy beard.​",
+        "For Smooth and Frizz-free Beard",
+      ],
+    },
+
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1hY3RpdmF0b3ItYS1iYW5uZXItMTA4MHg4NTUtMDExLTEtOTcwNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8yLTEyMDE2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zLTEyMDE3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTEyMDE4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTEyMDE5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTEyMDIwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy84LTEyMDIxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTEyMDIyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1hY3RpdmF0b3ItbWMtMDMtMS0xMDA0MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1hY3RpdmF0b3ItbWMtMDItMS0xMDA0MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Beard Activator (0.5mm)",
+      qty: [],
+      cutPrice: "₹750",
+      price: "₹449",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Stimulates inactive hair follicles",
+        "Proven to be effective on patchy beard",
+        "Helps grow fuller and thicker beard​",
+        "Rejuvenates dull skin",
+      ],
+    },
+  ];
+  // ignore this
+  let below999Combo = [
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iYXRoLWFuZC1ib2R5LWNvbWJvLWRlLXRhbi0xMDgweDg1NS0xMjY4NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLWJhY2stOTkxOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS13YXNoLWJhY2stOTkxOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGUtdGFuLWJvZHktd2FzaC1iYWNrLTk5MjAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Bath and Body Combo for Men (De-Tan)",
+      qty: ["Charcoal", "De-Tan"],
+      cutPrice: "₹875",
+      price: "₹499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Facewash (100ml), Bodywash (200ml) & Hair Fall Control Shampoo (250ml)",
+        "Removes tan & dirt",
+        "Deep cleanses the body",
+        "Deep moisturizes the skin",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXRhbWluLWMtYnJpZ2h0ZW5pbmctY29tYm8tMTA4MHg4NTUtMTE4MjcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTAxLTExNDkzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXRhbWluLWMtZmFjZS13YXNoLWEtYmFubmVyLTAxLTExNDk3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTAyLTExNDk0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTAzLTExNDk1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9mdy1hLTItMTE0OTguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXRhbWluLWMtZmFjZS13YXNoLWEtYmFubmVyLTA0LTExNDk5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTEwLTExNDk2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdml0YW1pbi1jLW5pZ2h0LXNlcnVtLWEtYmFubmVyLTEwLTExNDk2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo Vitamin C Skin Brightening Combo",
+      qty: [],
+      cutPrice: "₹900",
+      price: "₹399",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU2LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "Includes: Vit-C Power-Foam Facewash (130ml) & Vitamin C Face Serum (Night Shot) (30ml)",
+        "India's 1st Power Foaming Facewash",
+        "Helps brighten skin & restore youthful glow",
+        "Refreshing Wake Up shot",
+      ],
+    },
+  ];
+  //bodywash product detail
+  let BodyWash = [
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctYm9keS13YXNoLTEwODB4ODU1LTEyNDk4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctYm9keXdhc2gtYS02NDU0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctYm9keS13YXNoLWltYWdlLTAzLTY0MjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGF0c2FwcC1pbWFnZS0yMDIwLTA2LTI5LWF0LTQ1MDU5LXBtLTY1NTEuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctYm9keXdhc2gtMDItMTA3NjMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ob3ctdG8tdXNlLTY0NTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctYm9keXdhc2gtMDMtMTA3NjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "BEARDO ULTRAGLOW BODYWASH (200ML)",
+      cutPrice: "₹350",
+      price: "₹249",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/29.png",
+      description: [
+        "Removes dirt & dead cells",
+        "Brightens the skin tone",
+        "Refreshes instantly",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tYm9keXdhc2gtMTA4MHg4NTUtMTIzNDcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tYm9keXdhc2gtaW1hZ2UtMDUtNjEzMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tYm9keXdhc2gtaW1hZ2UtMDQtNjEzMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tYm9keXdhc2gtaW1hZ2UtMDItNjEzMC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGUtdGFuLWJvZHktd2FzaC1iYWNrLTg3ODQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ob3ctdG8tdXNlLTY0NTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctYm9keXdhc2gtMDMtMTA3NjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "BEARDO DE-TAN BODYWASH FOR MEN (200ML)",
+      cutPrice: "₹250",
+      price: "₹199",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/20.png",
+      description: [
+        "Removes tan & dirt",
+        "Deep cleanses the body",
+        "Brightens & soothes the skin",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYm9keXdhc2gtMTA4MHg4NTUtMTIyNDMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYm9keXdhc2gtaW1hZ2UtMDUtMS0xLTg5NDAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYm9keXdhc2gtaW1hZ2UtMDItMS04OTI3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYm9keXdhc2gtaW1hZ2UtMDYtMS04OTI4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYm9keXdhc2gtaW1hZ2UtMDMtMS04OTI5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9jaGFyY29hbC1ib2R5LXdhc2gtMDItODUzMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctYm9keXdhc2gtMDMtMTA3NjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "BEARDO ACTIVATED CHARCOAL BODYWASH (200ML)",
+      cutPrice: "₹250",
+      price: "₹199",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/20.png",
+      description: [
+        "Cleanses & detoxifies deeply",
+        "Keeps the skin moisturised",
+        "Refreshes instantly with a rich fragrance",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aXBlb3V0LWJvZHl3YXNoLTEwODB4ODU1LTEzMDIyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aXBlb3V0LWJvZHl3YXNoLTEwODB4MTA4MC0wMS0xLTU3MjUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ob3ctdG8tdXNlLTYyNzcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "BEARDO WIPEOUT BODYWASH (200ML)",
+      cutPrice: "₹250",
+      price: "₹249",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/20.png",
+      description: [
+        "Removes germs, bacteria & viruses from skin",
+        "Keeps your skin soft & moisturized",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtZmFjZXdhc2gtYm9keXdhc2gtMTA4MHg4NTUtMTMzMzkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy94NzAwLWFjdGl2YXRlZC1jaGFyY29hbC1ib2R5d2FzaC1pbWFnZS0wMS02MDgzLTcyNzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtZmFjZXdhc2gtMTA4MHg4NTUtMTMzNDAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy94NzAwLWFjdGl2YXRlZC1jaGFyY29hbC1ib2R5d2FzaC1pbWFnZS0wMi02MDg0LTcyNzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTEyODcyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTEyODczLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9jaGFyY29hbC1ib2R5LXdhc2gtMDItOTc5My5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "BEARDO CHARCOAL FACEWASH & CHARCOAL BODYWASH COMBO",
+      cutPrice: "₹525",
+      price: "₹349",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/20.png",
+      description: [
+        "Includes: Charcoal Facewash (100ml) & Charcoal Bodywash (200ml)",
+        "Keeps your face clean & fresh",
+        "Removes dirt",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLWRlLXRhbi1ib2R5d2FzaC1jb21iby0xMDgweDg1NS0xMjczNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLS0tZGUtdGFuLWJvZHl3YXNoLWNvbWJvLWltYWdlLTAyLTU5NjguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLS0tZGUtdGFuLWJvZHl3YXNoLWNvbWJvLWltYWdlLTAzLTU5NjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLS0tZGUtdGFuLWJvZHl3YXNoLWNvbWJvLWltYWdlLTA1LTU5NzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLS0tZGUtdGFuLWJvZHl3YXNoLWNvbWJvLWltYWdlLTA0LTU5NzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLWJhY2stOTgyOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGUtdGFuLWJvZHktd2FzaC1iYWNrLTk4MjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "BEARDO HAIR FALL CONTROL SHAMPOO & DE-TAN BODYWASH COMBO",
+      cutPrice: "₹600",
+      price: "₹499",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/17.png",
+      description: [
+        "Includes: Hair Fall Control Shampoo (250ml) & De-Tan Bodywash (200ml)",
+        "Prevents Hair fall & damage",
+        "Stimulates hair follicles",
+      ],
+    },
+
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLXNvYXAtMTA4MHg4NTUtMTM0MTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8yLTctbWluLTM1NTA0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zLTQtMS0zNTQxNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTItMS0zNTQxNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTEtMzU1ODEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTItMS1taW4tMzU0MTguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTItMS1taW4tMzU0MTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "BEARDO HEMP SOAP (125G)",
+      cutPrice: "₹245",
+      price: "₹199",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/19.png",
+      description: [
+        "HEMP: Nature's Miracle for Healthy Skin",
+        "Body Acne Reduction",
+        "Heals & Calms Inflammation",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYnJpY2stc29hcC0xMDgweDg1NS0xMjMxMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYnJpY2stc29hcC1pbWFnZS0wMi02MDg4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYnJpY2stc29hcC1pbWFnZS0wMy02MDg5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYnJpY2stc29hcC1pbWFnZS0wNC02MDkwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9jaGFyY29hbC1zb2FwLWJhY2stMDEtODUzMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9jaGFyY29hbC1zb2FwLWJhY2stMDItODUzMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "BEARDO ACTIVATED CHARCOAL BRICK SOAP (125G)",
+      cutPrice: "₹195",
+      price: "₹169",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/13.png",
+      description: [
+        "Deep cleanses skin pores",
+        "Controls oil & removes dirt",
+        "Provides natural glow",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZWVwLXNlYS1icmljay1zb2FwLTEwODB4ODU1LTEyNzIzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZWVwLXNlYS1icmljay1zb2FwLWltYWdlLTAzLTYwOTMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZWVwLXNlYS1icmljay1zb2FwLWltYWdlLTAyLTYwOTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZWVwLXNlYS1icmljay1zb2FwLWltYWdlLTA0LTYwOTQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZWVwLXNlYS1icmljay1zb2FwLWltYWdlLTA1LTYwOTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGVlcC1zZWEtc29hcC1iYWNrLTAyLTEtMTAwMjMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGVlcC1zZWEtc29hcC1iYWNrLTAxLTEtMTAwMjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "BEARDO DEEP SEA BRICK SOAP (125G)",
+      cutPrice: "₹195",
+      price: "₹175",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/10.png",
+      description: [
+        "Instills a feeling of freshness",
+        "Re-energizes your body",
+        "Soothes your skin",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctc29hcC1pbWFnZS0wMS01Nzc2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctc29hcC1pbWFnZS0wNS01Nzc5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwL3NvbGRvdXQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctc29hcC1pbWFnZS0wNi01NzgwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdWx0cmFnbG93LXNvYXAtcGFjay1vZi0zLWJhY2stMDEtODc0Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdWx0cmFnbG93LXNvYXAtcGFjay1vZi0zLWJhY2stMDItODc0OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "BEARDO ULTRAGLOW SOAP (SET OF 3) (75G X 3)",
+      cutPrice: "₹495",
+      price: "₹297",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/40.png",
+      description: [
+        "Brightens skin",
+        "Reduces pigmentation & scars",
+        "Minimizes the pores",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1zb2FwLWNvbWJvLTEwODB4ODU1LTEyNjE0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aXBlb3V0LXNvYXAtaW1hZ2UtMDEtNjM4NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZWVwLXNlYS1icmljay1zb2FwLWltYWdlLTAxLTYzODYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYnJpY2stc29hcC1pbWFnZS0wMS02Mzg4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZWVwLXNlYS1icmljay1zb2FwLWltYWdlLTA0LTYzODcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtYnJpY2stc29hcC1pbWFnZS0wNC02Mzg5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8td2lwZW91dC1zb2FwLTAzLTEwMDMwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "BEARDO ULTIMATE SOAP COMBO",
+      cutPrice: "₹589",
+      price: "₹399",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/32.png",
+      description: [
+        "Includes: Wipeout Soap (125g), Activated Charcoal Soap (125g) & Deep Sea Soap (125g)",
+        "Keeps your skin fresh & moisturized",
+        "Deep cleanses skin pores",
+      ],
+    },
+  ];
+  //Body Nourishment
+  let BodyNourishment = [
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXQtYy1ib2R5LXlvZ3VydC0xMDgweDg1NS0xMzIxOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXRhbWluLWMtYm9keS15b2d1cnQtYS1iYW5uZXItMDgtMTEwOTAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLWEtYmFubmVyLTAyLTExMDU0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLWEtYmFubmVyLTA0LTExMDU1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLWEtYmFubmVyLTA1LTExMDU2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbG9lLXZlcmEtZmFjZS13YXNoLWEtYmFubmVyLTA2LTExMDU3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXRhbWluLWMtYm9keS15b2d1cnQtbW9ja3VwLTAxLTExMDU5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "BEARDO VIT-C BODY YOGURT (120G)",
+      cutPrice: "₹399",
+      price: "₹199",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/50.png",
+      description: [
+        "Non-sticky and light weight",
+        "Gets absorbed quickly",
+        "Hydrates & refreshes instantly",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdWx0cmFnbG93LWJvZHktbG90aW9uLWltYWdlLTEwODAteC04NTUtMDEtMzY3NjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8yLTM3MDAxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zLTM3MDAyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zYi0zNzAwMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80YS0zNzAwNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTM3MDA3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy84LTM3MDA4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "BEARDO ULTRAGLOW BODY LOTION FOR MEN (250ML)",
+      cutPrice: "₹399",
+      price: "₹239",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/40.png",
+      description: [
+        "Designed specially for men's tough skin",
+        "Non sticky and quick absorption formula",
+        "Deep Penetration and Moisture Retention",
+      ],
+    },
+  ];
+  //Tattoo Care
+  let tattooCare = [
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90YXR0b28tc2hpbmVyLWdlbC0xMDgweDg1NS0xMjQ2OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90YXR0b28tc2hpbmVyLWdlbC1pbWFnZS0wMi01NzIzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90YXR0b28tc2hpbmVyLWdlbC1pbWFnZS0wMy01NzI0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90YXR0b28tc2hpbmVyLTAyLTk5ODEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90YXR0b28tc2hpbmVyLTAzLTk5ODIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0==",
+      ],
+      name: "BEARDO TATTOO SHINER GEL (50G)",
+      cutPrice: "₹350",
+      price: "₹199",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/43.png",
+      description: [
+        "Gives instant shine & brightness to the tattoo",
+        "Heals tattooed skin",
+        "Moisturizes & soothes tattooed skin",
+      ],
+    },
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xLTc0NDkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "BEARDO ULTRAGLOW BODY LOTION FOR MEN (250ML)",
+      cutPrice: "₹5147",
+      price: "₹1999",
+      discountSticker: "https://cdn.beardo.in/images/offerbadges/40.png",
+      description: [
+        "Includes: 1 Fragrance Product , 2 Face Care Products, 1 Hair Care Products,",
+        "1 Hair Styling Product, 2 Lifestyle Accessories , 1 Body Care Product,",
+      ],
+    },
+  ];
+  let oilsSerum = [
+    // 1st Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtaW1hZ2UtMDEtNjgzMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtMTAxMzMuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtaW1hZ2UtMDItNjgzNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTExNTQ0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTEtMTE1NDUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tYW1hem9uLWEtYmFubmVyLWJlYXJkLXNlcnVtLTEwODB4ODU1LTEtMTE4MjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Onion Oil (25ml)",
+      cutPrice: "₹399",
+      price: "₹249",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "GROW HAIR FASTER & THICKER",
+        "REDUCES DANDRUFF & SOOTHES ITCHY SCALP",
+        "MAKES HAIR SHINIER AND HEALTHIER",
+        "NATURAL AND ODOUR FREE",
+      ],
+    },
+    // 2nd Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtaW1hZ2UtMDEtNjgzMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtMTAxMzMuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtaW1hZ2UtMDItNjgzNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTExNTQ0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTEtMTE1NDUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tYW1hem9uLWEtYmFubmVyLWJlYXJkLXNlcnVtLTEwODB4ODU1LTEtMTE4MjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Onion Oil (25ml)",
+      cutPrice: "₹399",
+      price: "₹249",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "GROW HAIR FASTER & THICKER",
+        "REDUCES DANDRUFF & SOOTHES ITCHY SCALP",
+        "MAKES HAIR SHINIER AND HEALTHIER",
+        "NATURAL AND ODOUR FREE",
+      ],
+    },
+    // 3rd Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLXNlcnVtLTEwODB4ODU1LTEyMDg0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtMTAxMzMuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zLTEtMTE3MjAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTEtMTE3MjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTQtMTE3MjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tYW1hem9uLWEtYmFubmVyLWJlYXJkLXNlcnVtLTEwODB4ODU1LTEtMTE4MjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Hair Serum (50ml)",
+      cutPrice: "₹295",
+      price: "₹199",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "GROW HAIR FASTER & THICKER",
+        "REDUCES DANDRUFF & SOOTHES ITCHY SCALP",
+        "MAKES HAIR SHINIER AND HEALTHIER",
+        "NATURAL AND ODOUR FREE",
+      ],
+    },
+    // 4th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90aGlja2VuaW5nLXNlcnVtLXNwcmF5LTEwODB4ODU1LTEyMzc5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90aGlja2VuaW5nLXNlcnVtLXNwcmF5LTEwODB4ODU1LTEyMzgyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xMDgweDg1NS0zMDQwNi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGF0c2FwcC1pbWFnZS0yMDIwLTA2LTI4LWF0LTExMDg1Ni1wbS02NTIxLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTEtMTE1NDUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tYW1hem9uLWEtYmFubmVyLWJlYXJkLXNlcnVtLTEwODB4ODU1LTEtMTE4MjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Thickening Serum Spray (50ml)",
+      cutPrice: "₹399",
+      price: "₹199",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "GROW HAIR FASTER & THICKER",
+        "REDUCES DANDRUFF & SOOTHES ITCHY SCALP",
+        "MAKES HAIR SHINIER AND HEALTHIER",
+        "NATURAL AND ODOUR FREE",
+      ],
+    },
+    // 5th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1oYWlyLWdyb3d0aC1vaWwtMTA4MHg4NTUtMTE5ODkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtMTAxMzMuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTM0OTAyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTM0OTAzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTM1NTIxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTM0OTA1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy84LTM0OTA2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTM0OTA3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xMC0zNTUyOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xMS0zNDkwOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Beard & Hair Growth Oil (50ml)",
+      cutPrice: "₹750",
+      price: "₹499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzMzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "GROW HAIR FASTER & THICKER",
+        "REDUCES DANDRUFF & SOOTHES ITCHY SCALP",
+        "MAKES HAIR SHINIER AND HEALTHIER",
+        "NATURAL AND ODOUR FREE",
+      ],
+    },
+    //   6th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLTEwODB4ODU1LTEyMzM3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLWltYWdlLTAyLTYwNzcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtaW1hZ2UtMDItNjgzNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLWltYWdlLTA1LTYwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTEtMTE1NDUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tYW1hem9uLWEtYmFubmVyLWJlYXJkLXNlcnVtLTEwODB4ODU1LTEtMTE4MjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Onion Oil (25ml)",
+      cutPrice: "₹1649",
+      price: "₹799",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "GROW HAIR FASTER & THICKER",
+        "REDUCES DANDRUFF & SOOTHES ITCHY SCALP",
+        "MAKES HAIR SHINIER AND HEALTHIER",
+        "NATURAL AND ODOUR FREE",
+      ],
+    },
+    // 7th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ib3NzLWNvbWJvLTEwODB4ODU1LTEzMTcxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYXJrLXNpZGUtcGVyZnVtZS1pbWFnZS0wMS03NDAxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9vbmlvbi1vaWwtaW1hZ2UtMDItNjgzNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9uby13YXNoLWZhY2V3YXNoLTAxLTg5NjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbXVnLTEtbWluLTc0MDIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy94NzAwLWFjdGl2YXRlZC1jaGFyY29hbC1mYWNlLXNjcnViLTIwMGctNjE5MC03NDA1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo Boss Combo",
+      cutPrice: "₹10080",
+      price: "₹6048",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "GROW HAIR FASTER & THICKER",
+        "REDUCES DANDRUFF & SOOTHES ITCHY SCALP",
+        "MAKES HAIR SHINIER AND HEALTHIER",
+        "NATURAL AND ODOUR FREE",
+      ],
+    },
+  ];
+
+  let hairStyling = [
+    // 1st Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xLTM1ODk1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8yLTUtMTI0MDQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTUtMTI0MDUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTItMzU4ODkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTItMzU4OTAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTItMzU4OTEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTUtMTI0MDYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTItMTI0MDcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTM1ODkyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy84LTM1ODkzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTM1ODk0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo Hair Wax Strong Hold Crystal Gel Wax (100g)",
+      cutPrice: "₹400",
+      price: "₹249",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 2nd Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWlyYWNsZS1oZW1wLW9pbC0xMDgweDg1NS0wMS0zNjIwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTM2MTk5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTM2MTk4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTM2Mzg4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zLTM2MTk2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTM2MTk3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTM2MjAxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo HEMP Styling Hair Oil For Men (100ml)",
+      cutPrice: "₹399",
+      price: "₹249",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 3rd Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWlyYWNsZS1oZW1wLW9pbC0xMDgweDg1NS0wMS0zNjIwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTM2MTk5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTM2MTk4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTM2Mzg4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zLTM2MTk2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTM2MTk3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xMC0zNjM4OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "",
+      ],
+      name: "Beardo HEMP Styling Hair Oil For Men (100ml)",
+      cutPrice: "₹399",
+      price: "₹249",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 4th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9zdHJvbmctaG9sZC1oYWlyLXNwcmF5LWltYWdlLTAyLTYwNjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTExNzc4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTExNzc3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTExNzc5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTExNzgwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy85LTExNzgxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9zdHJvbmctaG9sZC1oYWlyLXNwcmF5LWltYWdlLTAzLTYwNzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLXNwcmF5LXF1aWNrLWZpeC0wMi05OTgwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo Strong Hold Hair Spray For Men (180ml)",
+      cutPrice: "₹450",
+      price: "₹249",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQ1LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 5th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy94eHRyYS1zdHJvbmctaG9sZC13YXgtMTA4MHg4NTUtMTI2MjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy84LTItMTE2NzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zLTM2OTQ1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTM2OTQ2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTM2OTQ3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTM2OTQ4LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTM2OTQ5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy94eHRyYS1zdHJvbmctaG9sZC1oYWlyLXdheC1pbWFnZS0zLTgyNTYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLXdheC14eHRyYS1zdG9uZy1ob2xkLWJhY2stMS0xMDE1My5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Hair Wax XXTRA STRONGHOLD Crystal Wax (100g)",
+      cutPrice: "₹400",
+      price: "₹249",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 6th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLXNlcnVtLTEwODB4ODU1LTEyMDg0LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8yLTQtMTIyMzQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8zLTEtMTE3MjAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTQtMTE3MjIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTItMTE3MjMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLXNlcnVtLWJhY2stOTk1Ny5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTEtMTE3MjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Hair Serum (50ml)",
+      cutPrice: "₹295",
+      price: "₹199",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzMzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 7th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tb29jaC1zd2FnLWNvbWJvLWEtYmFubmVyLTAzLW1pbi03MTgzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGF0c2FwcC1pbWFnZS0yMDIwLTA5LTI1LWF0LTQyNjIxLXBtLTcxMDguanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGF0c2FwcC1pbWFnZS0yMDIwLTA5LTI1LWF0LTQyNjIwLXBtLTcxMTMuanBlZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZC1tdXN0YWNoZS13YXgtZXh0cmEtc3Ryb25nLTAxLTcxMTEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS1ncm93dGgtcm9sbC1vbi1pbWFnZS0wMS03MTEyLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS13YXgtZXh0cmEtc3Ryb25nLTAyLTk5MDQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS1ncm93dGgtcm9sbC1vbi0wMi05OTA1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9tdXN0YWNoZS1ncm93dGgtcm9sbC1vbi0wMy05OTA2LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+      ],
+      name: "Beardo Mooch Swag Combo",
+      cutPrice: "₹1194",
+      price: "549₹",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 8th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ib29tZXJhbmctc2hhcGluZy10b29sLTEwODB4ODU1LTEyNzAwLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ib29tZXJhbmctY29tYi1zaGFwaW5nLXRvb2wtaW1hZ2UtMDMtNjA2Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ib29tZXJhbmctY29tYi1zaGFwaW5nLXRvb2wtaW1hZ2UtMDItNjA2MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ib29tZXJhbmctY29tYi1zaGFwaW5nLXRvb2wtaW1hZ2UtMDQtNjA2My5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGF0c2FwcC1pbWFnZS0yMDIxLTAyLTE5LWF0LTYyNjQ0LXBtLTEwMjIyLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Boomerang Comb Shaping Tool",
+      cutPrice: "₹399",
+      price: "249",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+  ];
+
+  let shampoo = [
+    // 1st Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLTEwODB4ODU1LTEtMTIxMDYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy80LTQtMTE4ODEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy81LTUtMTE4ODIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy82LTEtMTE4ODMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy83LTQtMTE4ODQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy84LTQtMTE4ODUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLWJhY2stOTk1Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Men (250ml)",
+      cutPrice: "₹345",
+      price: "₹250",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzMwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+
+    // 2nd Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLTEwODB4ODU1LTEyMzM3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLWltYWdlLTAyLTYwNzcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLWltYWdlLTAzLTYwNzguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLXNlcnVtLWltYWdlLTAxLTExNjQxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYW5kcnVmZi1jb250cm9sLWNvbWJvLWltYWdlLTA1LTYwODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLXNlcnVtLWJhY2stOTgwNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Dandruff Control Combo",
+      cutPrice: "₹1743",
+      price: "₹799",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 3rd Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1raXQtMTA4MHg4NTUtMTIxMjUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1raXQtaW1hZ2UtMDItNTc4Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1raXQtaW1hZ2UtMDQtNTc4NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1raXQtaW1hZ2UtMDMtNTc4My5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1raXQtaW1hZ2UtMDUtNTc4NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZ3Jvd3RoLW9pbC01MG1sLWJhY2stMDEtOTgyNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLXNlcnVtLWJhY2stOTgyNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Hair fall control kit (Shampoo, Serum & Growth oil)",
+      cutPrice: "₹1395",
+      price: "₹799",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+
+    //4th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iYXRoLWFuZC1ib2R5LWNvbWJvLWNoYXJjb2FsLTEwODB4ODU1LTEyOTQxLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9jaGFyY29hbC1ib2R5LXdhc2gtMDItOTkxNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8xMC0xMjk0Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLWJhY2stOTkxOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Bath and Body Combo for Men (Charcoal)",
+      cutPrice: "₹895",
+      price: "₹772",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 5th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLWRlLXRhbi1ib2R5d2FzaC1jb21iby0xMDgweDg1NS0xMjczNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLS0tZGUtdGFuLWJvZHl3YXNoLWNvbWJvLWltYWdlLTAyLTU5NjguanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLS0tZGUtdGFuLWJvZHl3YXNoLWNvbWJvLWltYWdlLTAzLTU5NjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLS0tZGUtdGFuLWJvZHl3YXNoLWNvbWJvLWltYWdlLTA1LTU5NzAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLS0tZGUtdGFuLWJvZHl3YXNoLWNvbWJvLWltYWdlLTA0LTU5NzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLWJhY2stOTgyOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGUtdGFuLWJvZHktd2FzaC1iYWNrLTk4MjkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Hair Fall Control Shampoo & De-Tan Bodywash Combo",
+      cutPrice: "₹700",
+      price: "₹499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzE3LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 6th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iYXRoLWFuZC1ib2R5LWNvbWJvLWRlLXRhbi0xMDgweDg1NS0xMjY4NC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1zaGFtcG9vLWJhY2stOTkxOC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZS13YXNoLWJhY2stOTkxOS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tZGUtdGFuLWJvZHktd2FzaC1iYWNrLTk5MjAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+      ],
+      name: "Beardo Bath and Body Combo for Men (De-Tan)",
+      cutPrice: "₹875",
+      price: "₹499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+    // 7th Product
+    {
+      imageUrl: [
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wb3dlci1lc3NlbnRpYWxzLWNvbWJvLTEwODAteC04NTUtMTIxNjUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wb3dlci1lc3NlbnRpYWxzLWNvbWJvLWltYWdlLTA2LTU5MjEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wb3dlci1lc3NlbnRpYWxzLWNvbWJvLWltYWdlLTA0LTU5MjMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wb3dlci1lc3NlbnRpYWxzLWNvbWJvLWltYWdlLTA3LTU5MjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wb3dlci1lc3NlbnRpYWxzLWNvbWJvLWltYWdlLTAyLTU5MjUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wb3dlci1lc3NlbnRpYWxzLWNvbWJvLWltYWdlLTAzLTU5MjYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjcwMCwiZml0Ijoib3V0c2lkZSJ9fX0=",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8td2lwZW91dC1jb21iby1wb3VjaC0xMDgweDg1NS02NDAzLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0Ijo3MDAsImZpdCI6Im91dHNpZGUifX19",
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctbG90aW9uLWZhY2UtY3JlYW0tMDItOTg4Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6NzAwLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      ],
+      name: "Beardo Power Essentials Combo",
+      cutPrice: "₹2544",
+      price: "₹1199",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQ5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      description: [
+        "LONGER AND STRONGER HOLD",
+        "MAKES HAIR STYLING EFFORTLESS",
+        "PREVENTS DRYNESS",
+        "INSTANT SHINE AND STYLE",
+      ],
+    },
+  ];
+
+  // console.log(BodyWash[0].price);
+  // console.log(BodyNourishment[0].price);
+  // console.log(tattooCare[0].price);
+  // console.log(oilsSerum[0].price);
+  // console.log(hairStyling[0].price);
+  // console.log(shampoo[0].price);
+  localStorage.setItem("combos", JSON.stringify(combos));
+  localStorage.setItem("beard", JSON.stringify(beard));
+  localStorage.setItem("tattooCare", JSON.stringify(tattooCare));
+  localStorage.setItem("oilsSerum", JSON.stringify(oilsSerum));
+  localStorage.setItem("hairStyling", JSON.stringify(hairStyling));
+  localStorage.setItem("shampoo", JSON.stringify(shampoo));
+  localStorage.setItem("BodyWash", JSON.stringify(BodyWash));
+  localStorage.setItem("BodyNourishment", JSON.stringify(BodyNourishment));
+
+  // -------------------landing page data------------------------------------------
+  var slide1Obj = [
+    {
+      backgroundImageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3ZpcF9zYWxlX2RvdGQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      vipImageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3Jzel92aXBfaG91cnNfbG9nby1taW4ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ubmJlYXJkby1tZWdhLWhlbXAtY29tYm8tNTEyeDUxMi0zNjg1MC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Beardo Mega Hemp Combo",
+      cutPrice: "₹ 1791",
+      price: "₹ 499",
+      discountSticker:
+        "https://cdn.beardo.in/vipclubsale2021/badge/VIP_Sale_Discount_Icon_72%25.png",
+    },
+    {
+      backgroundImageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3ZpcF9zYWxlX2RvdGQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      vipImageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3Jzel92aXBfaG91cnNfbG9nby1taW4ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aXNoa3ktc21va2UtZGFyay1zaWRlLWRvbi1kZW8tbWFmaWEtZGVvLTUxMng1MTItMzczMTMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      name: "Beardo AfterHours Perfume Combo",
+      cutPrice: "₹ 3298",
+      price: "₹ 999",
+      discountSticker:
+        "https://cdn.beardo.in/vipclubsale2021/badge/VIP_Sale_Discount_Icon_70%25.png",
+    },
+
+    {
+      backgroundImageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3ZpcF9zYWxlX2RvdGQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      vipImageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3Jzel92aXBfaG91cnNfbG9nby1taW4ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1mYWNld2FzaC1jb21iby01MTJ4NTEyLTEyODYxLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo Ultimate Facewash Combo",
+      cutPrice: "₹ 900",
+      price: "₹ 399",
+      discountSticker:
+        "https://cdn.beardo.in/vipclubsale2021/badge/VIP_Sale_Discount_Icon_56%25.png",
+    },
+    {
+      backgroundImageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3ZpcF9zYWxlX2RvdGQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      vipImageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3Jzel92aXBfaG91cnNfbG9nby1taW4ucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9ncm93dGgtcHJvLWtpdC01MTJ4NTEyLTExOTg2LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Don Beardo's Beard Growth Pro Kit",
+      cutPrice: "₹ 2095",
+      price: "₹ 888",
+      discountSticker:
+        "https://cdn.beardo.in/vipclubsale2021/badge/VIP_Sale_Discount_Icon_58%25.png",
+    },
+  ];
+
+  localStorage.setItem("slider1", JSON.stringify(slide1Obj));
+
+  var topSellersProdObj = [
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9waG90by1mYWNlLWNvbWJvLTUxMng1MTItMzcxMzMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjI4MywiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Beardo Photo Face Combo",
+      cutPrice: "₹ 1225",
+      price: "₹ 399",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzY3LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1raXQtNTEyeDUxMi0xMjEyMy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo Hair fall control kit (Shampoo, Serum & Growth oil)",
+      cutPrice: "₹ 1395",
+      price: "₹ 699",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9jaGFyY29hbC1kaXJ0eS1kdW8tY29tYm8tNTEyeDUxMi0zNzE2Ni5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo Charcoal Dirty Duo combo",
+      cutPrice: "₹ 625",
+      price: "₹ 299",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy93aGlza3ktc21va2UtcGVyZnVtZS01MTJ4NTEyLTM0OTMyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
+      name: "Beardo Whisky Smoke Perfume EDP (100ml)",
+      cutPrice: "₹ 1200",
+      price: "₹ 499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+  ];
+
+  localStorage.setItem("topsellers", JSON.stringify(topSellersProdObj));
+  // var topSellers= JSON.parse(localStorage.getItem("topsellers"));
+  // console.log(topSellers);
+
+  var hourlyPrizeObj = [
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9lbGl0ZS1iZWFyZG8tZ2lmdC1zZXQtNTEyeDUxMi0zNzAyMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Elite Beardo Gift Set",
+      price: "WORTH ₹3293",
+      winnerName: "@Rohan Gangurde",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1wZXJmdW1lLWNvbWJvLTUxMng1MTItMzcwMjUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+      name: "Ultimate Perfume combo",
+      price: "WORTH ₹3600",
+      winnerName: "@The MK 9 salon Razzaq kazi",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbWF6b24tY2FyZC1yczUwMDAtMTcweDIwMC0zNzAxNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Amazon Voucher worth ",
+      price: "WORTH ₹5000",
+      winnerName: "@Shivang Khanna",
+    },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wYXJ0eS1zdGFydGVyLWNvbWJvLTE3MHgyMDAtMzcwODkucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    //     name: "Beardo Party Starter combo",
+    //     price:"WORTH ₹3350",
+    //     winnerName:"@SAPTARSHI GHOSH DASTIDER"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWVnYS1oZW1wLWNvbWJvLTM3MDE5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    //     name: "Mega Hemp Combo",
+    //     price:"WORTH ₹1791",
+    //     winnerName:"@ABHISHEK TIWARI"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9lbGl0ZS1iZWFyZG8tZ2lmdC1zZXQtNTEyeDUxMi0zNzAyMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=" ,
+    //     name: "Elite Beardo Gift Set",
+    //     price:"WORTH ₹3293",
+    //     winnerName:"@Haider Ali"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wYXJ0eS1zdGFydGVyLWNvbWJvLTE3MHgyMDAtMzcwODkucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    //     name: "Beardo Party Starter combo ",
+    //     price:"WORTH ₹3350",
+    //     winnerName:"@priyam singh"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1wZXJmdW1lLWNvbWJvLTUxMng1MTItMzcwMjUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    //     name: "Ultimate Perfume combo ",
+    //     price:"WORTH ₹3600",
+    //     winnerName:"@Jayraj Ganvit"
+    // },
+    // {
+    //     imageUrl:"https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbWF6b24tY2FyZC1yczUwMDAtMTcweDIwMC0zNzAxNy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    //     name: "Amazon Voucher worth Rs.5,000/- ",
+    //     price:"WORTH ₹5000",
+    //     winnerName:"@Yugal Sonkusare"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9haXJwb2RzLTNyZC1nZW5lcmF0aW9uLTE3MHgyMDAtMzcwMTYucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    //     name: "AirPods (3rd generation) ",
+    //     price:"WORTH ₹18500",
+    //     winnerName:"@Vipul Guddhe"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWVnYS1oZW1wLWNvbWJvLTM3MDE5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    //     name: "Mega Hemp Combo. ",
+    //     price:"WORTH ₹1791",
+    //     winnerName:"@Rahul Meshram"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1wZXJmdW1lLWNvbWJvLTUxMng1MTItMzcwMjUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    //     name: "Ultimate Perfume combo  ",
+    //     price:"WORTH ₹3600",
+    //     winnerName:"@Anuj Kumar"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wYXJ0eS1zdGFydGVyLWNvbWJvLTE3MHgyMDAtMzcwODkucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    //     name: "Beardo Party Starter combo ",
+    //     price:"WORTH ₹3350",
+    //     winnerName:"@Rahul Mishra"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9pcGFkLTM3MDIyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    //     name: "2021 Apple 10.2-inch (25.91 cm) iPad with A13 Bionic chip (Wi-Fi, 64GB) - Space Grey (9th Generation) ",
+    //     price:"WORTH ₹31000",
+    //     winnerName:"@Sushil Kumar"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWVnYS1oZW1wLWNvbWJvLTM3MDE5LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    //     name: "Mega Hemp Combo. ",
+    //     price:"WORTH ₹1791",
+    //     winnerName:"@Rohit Sharma"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1wZXJmdW1lLWNvbWJvLTUxMng1MTItMzcwMjUucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19" ,
+    //     name: "Ultimate Perfume combo  ",
+    //     price:"WORTH ₹3600",
+    //     winnerName:"@Rahul Chotaliya"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wYXJ0eS1zdGFydGVyLWNvbWJvLTE3MHgyMDAtMzcwODkucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    //     name: "Beardo Party Starter combo ",
+    //     price:"WORTH ₹3350",
+    //     winnerName:"@Samir Ahmed"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9lY2hvLTR0aC1nZW4tMjAyMC1yZWxlYXNlLTM3MDIwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    //     name: "Echo (4th Gen, 2020 release) | Premium sound powered by Dolby and Alexa (Black)",
+    //     price:"WORTH ₹7500",
+    //     winnerName:"@Nitesh Kumar"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wYXJ0eS1zdGFydGVyLWNvbWJvLTE3MHgyMDAtMzcwODkucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    //     name: "Beardo Party Starter combo ",
+    //     price:"WORTH ₹3350",
+    //     winnerName:"@Kannaiah Mishra"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9pcGFkLTM3MDIyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    //     name: "2021 Apple 10.2-inch (25.91 cm) iPad with A13 Bionic chip (Wi-Fi, 64GB) - Space Grey (9th Generation) ",
+    //     price:"WORTH ₹31000",
+    //     winnerName:"@Abdullah"
+    // },
+    // {
+    //     imageUrl: "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9lY2hvLTR0aC1nZW4tMjAyMC1yZWxlYXNlLTM3MDIwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    //     name: "Echo (4th Gen, 2020 release) | Premium sound powered by Dolby and Alexa (Black)",
+    //     price:"WORTH ₹7500",
+    //     winnerName:"@Siri R"
+    // }
+  ];
+  localStorage.setItem("hourlyData", JSON.stringify(hourlyPrizeObj));
+
+  var hotSellersProdObj = [
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRyYWdsb3ctZnctdWx0cmFnbG93LWxvdGlvbi01MTJ4NTEyLTM3MDkwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
+      name: "Beardo Ultraglow Face Cream & Ultraglow Facewash Combo",
+      cutPrice: "₹ 675",
+      price: "₹ 299",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzU2LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWZhbGwtY29udHJvbC1raXQtNTEyeDUxMi0xMjEyMy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo Hair fall control kit (Shampoo, Serum & Growth oil)",
+      cutPrice: "₹ 1395",
+      price: "₹ 699",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hbGwtbmlnaHQtcGVyZnVtZS1kdW8tNTEyeDUxMi0xMzA1Ni5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo All-Night Perfume Duo",
+      cutPrice: "₹ 2700",
+      price: "₹ 799",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzcwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy91bHRpbWF0ZS1wZXJmdW1lLWNvbWJvLTUxMng1MTItMzUxODQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjI4MywiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Beardo Ultimate Perfume Combo",
+      cutPrice: "₹ 3600",
+      price: "₹ 999",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzcyLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+  ];
+
+  localStorage.setItem("hotSeller", JSON.stringify(hotSellersProdObj));
+
+  // face essentails
+
+  var faceEssentialsProdObj = [
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtZmFjZXdhc2gtNTEyeDUxMi0zLTEzMDQ0LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
+      name: "Beardo Activated Charcoal Facewash (100ml)",
+      cutPrice: "₹ 275",
+      price: "₹ 175",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM2LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZXRhbi1mYWNlLXNjcnViLTUxMng1MTItMzU0NzAucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjI4MywiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Beardo Activated Charcoal Face Scrub (100g)",
+      cutPrice: "₹ 350",
+      price: "₹ 199",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtcGVlbC1vZmYtbWFzay01MTJ4NTEyLTEyODE4LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
+      name: "Beardo Activated Charcoal Peel Off Mask (100g)",
+      cutPrice: "₹ 350",
+      price: "₹ 199",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tZmFjZXdhc2gtNTEyeDUxMi0xMjA0Ny5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo De-Tan Facewash for Men (100ml)",
+      cutPrice: "₹ 275",
+      price: "₹ 175",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzM2LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZS10YW4tcGVlbC1vZmYtbWFzay01MTJ4NTEyLTEyMjUxLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
+      name: "Beardo De-Tan Peel Off Mask (100g)",
+      cutPrice: "₹ 399",
+      price: "₹ 199",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kZXRhbi1mYWNlLXNjcnViLTUxMng1MTItMzU0NTcucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjI4MywiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Beardo De-Tan Face Scrub (100g)",
+      cutPrice: "₹ 350",
+      price: "₹ 199",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQzLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy84MzBkNWQ3Ny0xNzM0LTQxN2EtODk0Yi0xMTRlOWMxYjVhOWQtMzU4MDgucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjI4MywiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Beardo HEMP Facewash Scrub (100ml)",
+      cutPrice: "₹ 449",
+      price: "₹ 249",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzQ1LnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oZW1wLWZvYW0tZmFjZXdhc2gtNTEyeDUxMi0xMzMxMy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo HEMP Foam Facewash (100ml)",
+      cutPrice: "₹ 399",
+      price: "₹ 199",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL25ld2JhZGdlLzUwLnBuZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    },
+  ];
+  localStorage.setItem("face", JSON.stringify(faceEssentialsProdObj));
+
+  // most waited combos
+
+  var mostWantedCombosProdObj = [
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9hY3RpdmF0ZWQtY2hhcmNvYWwtY29tYm8tZ3JleS1iYWNrZ3JvdW5kLTM1OTQ1LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
+      name: "Beardo Activated Charcoal Combo",
+      cutPrice: "₹ 875",
+      price: "₹ 499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS80My5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nZXQtaGVtcHktY29tYm8tZ3JleS1iYWNrZ3JvdW5kMTEtMzYzODAuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjI4MywiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Beardo Get Hempy Combo",
+      cutPrice: "₹ 1093",
+      price: "₹ 349",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS82OC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy8wMmluc3RhLWJyaWdodC1mYWNlLWNvbWJvLWdyZXktYmFja2dyb3VuZC0zNjkwMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo Insta-bright Face Combo",
+      cutPrice: "₹ 950",
+      price: "₹ 499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS80Ny5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy92aXAtZGFya3NpZGUtZ2lmdC1zZXQtZ3JleS1iYWNrZ3JvdW5kLTEzMjExLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MSwiaGVpZ2h0IjoyODMsImZpdCI6Im91dHNpZGUifX19",
+      name: "Beardo VIP DARKSIDE Gift",
+      cutPrice: "₹ 2700",
+      price: "₹ 949",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS82NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9nb2RmYXRoZXItZnJhZ3JhbmNlLWNvbWJvLWdyZXktYmFja2dyb3VuZC0xMjU3MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo Godfather Fragrance Combo",
+      cutPrice: "₹ 1798",
+      price: "₹ 799",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS81Ni5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9jb2xvci1jYXJlLWNvbWJvLWdyZXktYmFja2dyb3VuZC0xMjcxMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo Color & Care Combo",
+      cutPrice: "₹ 1199",
+      price: "₹ 499",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS81OC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9oYWlyLWJlYXJkLXN0eWxpbmctZHVvLWNvbWJvLWdyZXktYmFja2dyb3VuZC0xMjU4MS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo Hair & Beard Styling Duo Combo",
+      cutPrice: "₹ 750",
+      price: "₹ 399",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS80Ny5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy90aGUtcGVyZmVjdC1oYWlyLWNvbWJvLWdyZXktYmFja2dyb3VuZC0xMzI2OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo The Perfect Hair Combo",
+      cutPrice: "₹ 695",
+      price: "₹ 349",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS81MC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kYXJrbmlnaHQtZnJhZ3JhbmNlLWNvbWJvLWdyZXktYmFja2dyb3VuZC0xMzA3NS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEsImhlaWdodCI6MjgzLCJmaXQiOiJvdXRzaWRlIn19fQ==",
+      name: "Beardo DarkNight Fragrance Combo",
+      cutPrice: "₹ 3299",
+      price: "₹ 999",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS83MC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+    {
+      imageUrl:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9wb3dlci1ibGFjay1jb21iby1ncmV5LWJhY2tncm91bmQtMTMxOTkuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxLCJoZWlnaHQiOjI4MywiZml0Ijoib3V0c2lkZSJ9fX0=",
+      name: "Beardo Power Black Combo",
+      cutPrice: "₹ 999",
+      price: "₹ 599",
+      discountSticker:
+        "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoibWFmaWEyMS9iYWRnZS81NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    },
+  ];
+  localStorage.setItem("combo", JSON.stringify(mostWantedCombosProdObj));
+
+  //background images
+  var backgroundImageObj = {
+    slideImageUrl:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidmlwY2x1YnNhbGUyMDIxL3ZpcF9zYWxlX2RvdGQucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    roomImageUrl: "https://cdn.beardo.in/newhome/new-home-bg-dark2.jpg",
+    imageUrl1:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMi0xMDQ3OC0yMzc5Mi0zMDc1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl2:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDUtMS0zNjk1MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl3:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMS0xLTEwNTEwLTEwNTUwLTMwNzU5LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJmaXQiOiJvdXRzaWRlIn19fQ==",
+    imageUrl4:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wNC0xMDU0OS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    fireGifImageUrl: " https://https://cdn.beardo.in/fire.gif",
+  };
+  localStorage.setItem("single_bg_images", JSON.stringify(backgroundImageObj));
+
+  // single images
+  var singleObj = {
+    desktopImageUrl:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9zYWxlYmVhcmRvLXNreS1iYW5uZXItMTYwMHgxMjAtMzcyNjQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxNjAwLCJoZWlnaHQiOjEsImZpdCI6Im91dHNpZGUifX19",
+    mobileImageUrl:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kc2FsZWJlYXJkby12aXAtc2FsZS1za3ktYmFubmVyLTEyMDAteC0zMDAtZmluYWwtMzcyNjUuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo0MjAsImhlaWdodCI6MSwiZml0Ijoib3V0c2lkZSJ9fX0=",
+    videoUrl:
+      "https://beardoc.s3.ap-south-1.amazonaws.com/mafia/mafia-video.mp4",
+    imageUrl1:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDYtMzY5ODYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    imageUrl2:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDIxMS0zNjk3OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl3:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDEtMzY5NzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7ImZpdCI6Im91dHNpZGUifX19",
+    imageUrl4:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9kb24tY29sbGVjdGlvbi0zNjk4Mi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl5:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDQtMS0zNzIwMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+    imageUrl6:
+      "https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDMtMS0zNzI0MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=",
+  };
+  localStorage.setItem("single_images", JSON.stringify(singleObj));
+</script>

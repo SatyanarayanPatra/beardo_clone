@@ -1,0 +1,59 @@
+/* Footer */
+#pContainer {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+body {
+  background: black;
+  color: white;
+}
+table {
+  text-align: center;
+  font-size: 10px;
+}
+td {
+  padding: 8px;
+  margin-top: 0px;
+}
+th {
+  color: gray;
+}
+
+#PfootLastDiv {
+  font-size: 10px;
+}
+#PfootLastDiv > p {
+  margin-top: 0;
+  color: gray;
+}
+#PfootLastDiv > h5 {
+  margin-bottom: 0;
+}
+#PfootLastDiv > h3 {
+  color: gray;
+}
+#PfootLastDiv > input {
+  background: black;
+  color: gray;
+  border: 1px solid white;
+  margin-right: 0;
+  font-size: 10px;
+  padding: 3px;
+}
+#PfootLastDiv > button {
+  margin-left: -3px;
+  border: 1px solid white;
+  background: white;
+  font-size: 10px;
+  padding: 3px;
+  vertical-align: top;
+  color: black;
+}
+#pFootImg {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="https://www.beardo.in/images/shortcut-icon.png"
+    />
+    <title>Beardo | Male Grooming Experts</title>
+
+    <link rel="stylesheet" href="../css/productHeadFoot.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <style>
+      #mainContainer {
+        display: flex;
+        flex-direction: row;
+        font-family: "Montserrat", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Zen Kaku Gothic Antique", sans-serif;
+      }
+
+      #nav2Container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 20px;
+      }
+      * {
+        background: black;
+        color: white;
+      }
+      #productsItem {
+        display: none;
+        grid-auto-flow: column;
+        grid-column-gap: 50px;
+        background: white;
+        border: 1px solid yellow;
+        color: black;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      }
+      #productsItem > div {
+        border: 1px solid teal;
+        background: white;
+        color: black;
+      }
+      .showProduct > div {
+        background: white;
+      }
+      .showProduct {
+        display: none;
+        background: white;
+        grid-auto-flow: column;
+        grid-column-gap: 50px;
+        background: white;
+        border: 1px solid yellow;
+        color: black;
+      }
+      .proImage {
+        background: white;
+      }
+      .Para {
+        background: white;
+        color: black;
+      }
+      #search {
+        background: white;
+        height: 10px;
+        padding: 5px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: none;
+      }
+      .nav2Img {
+        width: 10%;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainContainer"></div>
+    <div id="prosuctContainer"></div>
+    <hr />
+    <div id="pContainer"></div>
+  </body>
+</html>
+<script type="module">
+  // importing Product's Header file
+  import productHead from "../component/productHead.js";
+  let headContainer = document.getElementById("mainContainer");
+
+  headContainer.innerHTML = productHead();
+
+  // give Functionality on hover over the Product section
+  //   document.getElementById("show").addEventListener("mouseover", getProduct);
+
+  //   function getProduct() {
+  //     document.getElementById("productsItem").style.display = "grid";
+  //   }
+
+  //   importing Product's Footer file
+
+  import productFooter from "../component/ProductFooter.js";
+  let pfContainer = document.getElementById("pContainer");
+  console.log("pfContainer:", pfContainer);
+
+  pfContainer.innerHTML = productFooter();
+
+  //from here we are getting products
+  let row2 = document.getElementById("row2");
+
+  import {
+    appendData,
+    sortHighToLow,
+    sortLowToHigh,
+  } from "../component/script.js";
+
+  import allDiv from "../component/allDiv.js";
+
+  document.querySelector("#prosuctContainer").innerHTML = allDiv();
+
+  //enter the varialble here
+  let data = JSON.parse(localStorage.getItem("shampoo"));
+  document.getElementById("getCount").textContent = `${data.length} RESULTS`;
+  // console.log(data);
+  appendData(data);
+
+  document.querySelector("select");
+  // shortHere(data);
+
+  let order = document.querySelector("#selectOrder");
+  order.addEventListener("change", () => {
+    if (order.value === "low to high") {
+      sortLowToHigh(data);
+      appendData(data);
+    } else {
+      sortHighToLow(data);
+      appendData(data);
+    }
+  });
+</script>
