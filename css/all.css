@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+3:wght@200;400;500&display=swap");
+
+* {
+  background: rgb(30, 0, 0);
+  /* color: white; */
+  line-height: 18px;
+  font-weight: bold;
+  font-family: "Bebas Neue", cursive;
+  font-family: "Source Sans 3", sans-serif;
+}
+select {
+  color: black;
+  background: white;
+  height: 35px;
+  width: 200px;
+  border-radius: 10px;
+}
+option {
+  color: black;
+  background: white;
+}
+option:hover {
+  background-color: teal;
+}
+#container {
+  margin: auto;
+  width: 85%;
+  border: 1px solid transparent;
+}
+div {
+  background: transparent;
+}
+#row2 {
+  padding: 2%;
+  padding-left: 8%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 98%;
+  display: grid;
+  grid-template-columns: repeat(5, 23%);
+  grid-row-gap: 25px;
+  justify-content: space-around;
+}
+.imageDiv {
+  margin: auto;
+  width: 98%;
+  border: 2px solid transparent;
+  position: relative;
+  padding: 2%;
+  box-sizing: border-box;
+  background: white;
+}
+
+p,
+h3 {
+  background: transparent;
+
+  color: black;
+}
+
+.image1 {
+  width: 98%;
+  border: 1px solid transparent;
+  background: white;
+}
+
+.image2 {
+  height: 40%;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.giftBox div:last-child {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: white;
+  margin-top: 0;
+  line-height: 0px;
+
+  vertical-align: top;
+}
+#row2 > div {
+  width: 65%;
+}
+.wrapper > div:first-child,
+.imageDiv {
+  background: white;
+}
+
+.wrapper > div:last-child {
+  width: 100%;
+  text-align: center;
+  border: 1px solid transparent;
+  background: rgb(54, 53, 53);
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.wrapper > div:last-child p {
+  background: rgb(54, 53, 53);
+}
+
+.acPrice {
+  text-decoration: line-through red;
+  color: rgb(139, 145, 142);
+}
+
+#row1 {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  max-width: 98%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+/* ---------------LEFT DIV OF VIEW PAGE-------------------------- */
+
+* {
+  background-color: rgb(37, 5, 5);
+  color: white;
+}
+#outerContainer {
+  border: 2px solid transparent;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1%;
+}
+
+#left,
+#right {
+  width: 45%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+#viewImage,
+#sliderImage {
+  border: 1px solid transparent;
+}
+#viewImage {
+  height: 300px;
+  padding-left: 1%;
+  padding-right: 1%;
+  row-gap: 2%;
+}
+img {
+  padding: 1%;
+  width: 98%;
+  height: 98%;
+}
+#sliderImage {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  column-gap: 2%;
+  padding: 2%;
+}
+#sliderImage img {
+  margin: auto;
+  width: 100px;
+  height: 80px;
+  border: 2px solid white;
+  padding: 0px;
+}
+#credTag {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5%;
+}
+#credTag img {
+  width: 20px;
+  height: 20px;
+  padding: 1%;
+}
+
+#dis div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2%;
+}
+
+#dis img {
+  margin-top: 8px;
+  height: 10px;
+  width: 10px;
+}
+#dis p {
+  color: white;
+  font-size: 15px;
+}
+
+#buttonContainer {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#cartButton,
+#buyButton {
+  width: 40%;
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-weight: lighter;
+  font-size: 20px;
+  box-shadow: none;
+  border: none;
+}
+#buyButton {
+  background-color: rgb(213, 0, 1);
+}
+/* ---------------price div from left --------------- */
+#price {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2%;
+}
+#price img {
+  height: 45px;
+  width: 45px;
+}
+
+#price p {
+  color: white;
+  font-size: 25px;
+}
+
+#price p:nth-child(1) {
+  color: red;
+  font-weight: lighter;
+}
+#price p:nth-child(2) {
+  font-weight: lighter;
+  text-decoration: line-through red;
+}
+
+#price p:nth-child(3) {
+  font-weight: bold;
+}
+
+/* _______________________login css____________________________ */
