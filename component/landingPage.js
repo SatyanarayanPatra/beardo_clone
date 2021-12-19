@@ -188,4 +188,6 @@ image5.src = singleImages.imageUrl5;
 image6.src = singleImages.imageUrl6;
 
 
+
+
 // slider

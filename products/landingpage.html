@@ -17,6 +17,11 @@
     ></script>
 <link  rel="stylesheet" href="../css/landingPage.css">
 <link rel="stylesheet" href="../css/header1.css">
+<style>
+  a{
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
     <div id="nav">
@@ -40,13 +45,13 @@
                 <p id="bagCount">l</p>
               </div>
             </a>
-           <a href=""> <div><i style="color: white;" class="fas fa-bars"></i></div></a>
+           <a href="../login/login.html"> <div  id="appendData""><i style="color: white;" class="fas fa-bars"></i></div></a>
           </div>
         </div>
       </div>
    <div id="mcontainer">
        <!-- header -->
-      <div id="header"></div>
+     
 
  <!-- first image  -->
  <div id="main_image_div">
@@ -55,7 +60,18 @@
 </div>
      
 <!-- navbar slider -->
-<div id="navbarslider"></div>
+<div id="navbarslider">
+  <div id="divContainer">
+    <div><a href="./beard.html">BEARD</a></div>
+    <div><a href="./BodyNourishment.html">BODY NOURISHMENT</a></div>
+    <div><a href="./BodyWash.html">BODY WASH</a></div>
+    <div><a href="./combo.html">COMBOS</a></div>
+    <div><a href="./face.html">FACE</a></div>
+    <div><a href="./hairStyling.html">HAIR STYLE</a></div>
+    <div><a href="./oilSerum.html">OIL SERUM</a></div>
+    <div><a href="./shampoo.html">SHAMPOO</a></div>
+  </div>
+</div>
 
 <!-- slider products   COMPLETED SLIDER TO BE MADE  --> 
 <div id="slide1"></div>
@@ -66,7 +82,7 @@
 <!-- top sellers    COMPLETED-->
 <div id="trending" > 
     <h1>TOP SELLERS</h1>
- <div id="tscontainer"class="prodcontainer" ></div>
+ <a href="../products/beard.html"><div id="tscontainer"class="prodcontainer" ></div></a>
 </div>
 
 <!-- prizes    COMPLETED NOT APPENDING AT LAST
@@ -81,8 +97,8 @@
 
 <!-- prod + viewmore-->
 
-    <div class="prodcontainer" id="afterprize"></div>
-    <button class="viewButton">view more</button>
+   <a href="../products/combo.html"> <div class="prodcontainer" id="afterprize"></div>
+    <button class="viewButton">view more</button></a>
 
 
 <!-- video  COMPLETED-->
@@ -93,12 +109,15 @@
 
 
 <!-- trending prod slider -->
-<div id="trending">
+<a href="../products/BodyWash.html">
+  <div id="trending">
     <div id="tprod" ></div>
 </div>
+</a>
 
 <!-- discount -->
-<div id="discount_div">
+<a href="../products/combo.html">
+  <div id="discount_div">
     <img style="width:100%; height:100%"src="https://cdn.beardo.in/newhome/new-home-bg-dark2.jpg" alt="">
 <div id="discount_display_div">
     <img class="dis_div_top_left" src="https://beardoc.s3.ap-south-1.amazonaws.com/mafia21/under-199.svg" alt="">
@@ -106,27 +125,32 @@
     <img class="dis_div_top_right" src="https://beardoc.s3.ap-south-1.amazonaws.com/mafia21/under-699.svg" alt="">
 </div>
 </div>
+</a>
 
 <!-- face,beard,hair,lifestyle    slider -->
-<div id="face"style=" background-image: url('https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMi0xMDQ3OC0yMzc5Mi0zMDc1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=');">
+<a href="../products/face.html"><div id="face"style=" background-image: url('https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMi0xMDQ3OC0yMzc5Mi0zMDc1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=');">
     
-    <div id="fprod" class="productSlider"></div>
+  <div id="fprod" class="productSlider"></div></a>
 </div>
-<div id="beard" style="background-image: url('https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDUtMS0zNjk1MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=');">
+<a href="../products/beard.html">
+  <div id="beard" style="background-image: url('https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDUtMS0zNjk1MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=');">
     <div id="hprod" class="productSlider"></div>
 </div>
-<div id="hair" style="background-image: url('https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMi0xMDQ3OC0yMzc5Mi0zMDc1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=');">
-    <div id="bprod" class="productSlider"></div>
-</div>
+</a>
+<a href="../products/hairStyling.html"><div id="hair" style="background-image: url('https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tbWFmaWEtc2FsZS13ZWJzaXRlLWJhbm5lci0wMi0xMDQ3OC0yMzc5Mi0zMDc1OC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=');">
+  <div id="bprod" class="productSlider"></div>
+</div></a>
 <div id="life" style="background-image: url('https://images.beardo.in/eyJidWNrZXQiOiJiZWFyZG9jIiwia2V5IjoidXBsb2Fkcy9iZWFyZG8tdmlwLXNhbGUtd2Vic2l0ZS1jYXRlZ29yeS1iYW5uZXItMDUtMS0zNjk1MC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsiZml0Ijoib3V0c2lkZSJ9fX0=');">
     <div id="lsprod" class="productSlider"></div>
 </div>
 
 <!-- hotsellers -->
-<div id="hotsellers">
+<a href="../products/shampoo.html">
+  <div id="hotsellers">
     <h1>HOT SELLERS</h1>
     <div id="hotSeller_container" class="prodcontainer"></div>
 </div>
+</a>
 
 <!-- combo + viewmore -->
 <div id="combo_container">
@@ -135,17 +159,20 @@
      <button class="viewButton" id="viewBtn">view more</button>
 
 <!-- starter (6/1),(8/1)...remain -->
-<div id="starterKit">
+<a href="../products/oilSerum.html">
+  <div id="starterKit">
     <h1>STARTER KIT</h1>
     <div id="starter_container" class="prodcontainer"></div>
 </div>
+</a>
 
 <!-- single image -->
 <!-- <div id="singleImg1"> -->
     <img id="image1"class="singleImg">
 <!-- </div> -->
 <!-- products flex1-->
-<div class="prodcontainer" id="sk_flex1"></div>
+<a href="../products/combo.html">
+  <div class="prodcontainer" id="sk_flex1"></div>
 <img id="image2"class="singleImg">
 <div id="prodcontainer2" class="prodcontainer" ></div>
 <img id="image3"class="singleImg">
@@ -156,6 +183,7 @@
 <div id="prodcontainer5" class=" prodcontainer" ></div>
 <img id="image6"class="singleImg">
 <div id="prodcontainer6" class=" prodcontainer" ></div>
+</a>
 <br>
 <hr>
 <!-- footer -->

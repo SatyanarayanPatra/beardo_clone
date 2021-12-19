@@ -124,7 +124,7 @@ h3 {
   color: white;
 }
 #outerContainer {
-  border: 2px solid red;
+  border: 2px solid transparent;
   width: 80%;
   margin: auto;
   display: flex;
@@ -136,14 +136,14 @@ h3 {
 #left,
 #right {
   width: 45%;
-  border: 1px solid green;
+  border: 1px solid transparent;
   display: flex;
   flex-direction: column;
 }
 
 #viewImage,
 #sliderImage {
-  border: 1px solid blue;
+  border: 1px solid transparent;
 }
 #viewImage {
   height: 300px;

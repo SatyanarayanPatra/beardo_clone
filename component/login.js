@@ -95,7 +95,7 @@ function signin(e) {
     } else {
         alert("Login successful");
         loginform.reset();
-        window.location.href = "index.html";
+        window.location.href = "../products/landingpage.html";
     }
 }
 
@@ -104,7 +104,8 @@ all_users.forEach((user) => {
         if (user.password === loginpassword) {
             alert("Login successful");
             loginform.reset();
-            window.location.href = "index.html";
+            window.location.href = "../products/landingpage.html";
+
         } else {
             alert("Password is incorrect");
         }

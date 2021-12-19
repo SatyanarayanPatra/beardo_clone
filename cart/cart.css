@@ -1,25 +1,38 @@
 #outer {
-  border: 1px solid red;
+  border: 1px solid transparent;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  color: black;
+  font-weight: bolder;
 }
 
 .Container {
-  border: 1px solid green;
+  border: 1px solid transparent;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  max-width: 75%;
+  margin: auto;
 }
 
 .left {
-  border: 1px solid blue;
-  width: 10%;
+  padding: 4%;
+  border: 1px solid transparent;
+  width: 25%;
 }
 
 .left img {
   width: 100%;
 }
 .right {
-  border: 1px solid black;
+  border: 1px solid transparent;
+  padding-top: 10%;
+  color: slateblue;
+}
+
+.right > p {
+  font-size: 20px;
 }
 .detailContainer {
   display: flex;
@@ -31,15 +44,30 @@
   flex-direction: row;
   column-gap: 1%;
 }
+.priceDiv p:first-child {
+  font-weight: bold;
+  color: red;
+  margin-right: 10px;
+}
+
+.priceDiv p:nth-child(2) {
+  font-weight: lighter;
+  color: rgb(66, 48, 48);
+  margin-right: 10px;
+  font-size: 12px;
+  margin-top: 20px;
+  text-decoration: line-through;
+}
+
+.priceDiv p:nth-child(3) {
+  font-weight: bold;
+  color: rgb(32, 209, 32);
+  margin-right: 10px;
+}
 
 .qtyDiv {
   display: flex;
   flex-direction: row;
-}
-
-#paymentContainer {
-  border: 1px solid black;
-  width: 12%;
 }
 
 #outer {
@@ -53,8 +81,49 @@
 }
 
 .remove {
+  margin-left: 20%;
   color: red;
   display: inline-block;
-  font-weight: bold;
+  font-weight: bolder;
   border: none;
+}
+
+/* ----------------------------------- checkout------ */
+#paymentContainer {
+  width: 40%;
+}
+
+#subTotal,
+#delivery,
+#pay,
+#orderPlaced {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: lighter;
+}
+
+#priceTag {
+  font-size: 12px;
+  text-align: center;
+  color: red;
+}
+
+#priceTag p:first-child {
+  font-weight: bolder;
+}
+
+#placediv {
+  padding: 2%;
+  text-align: center;
+  margin-top: 8px;
+  height: 30px;
+  width: 150px;
+  background-color: red;
+  box-shadow: none;
+}
+#placediv p {
+  margin-top: 0;
+  font-weight: bolder;
+  color: white;
 }

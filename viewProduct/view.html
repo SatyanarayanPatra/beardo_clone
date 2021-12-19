@@ -6,8 +6,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/productHeadFoot.css" />
+    <style>
+      #mainContainer {
+        display: flex;
+        flex-direction: row;
+        font-family: "Montserrat", sans-serif;
+        font-family: "Roboto", sans-serif;
+        font-family: "Zen Kaku Gothic Antique", sans-serif;
+      }
+
+      #nav2Container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 20px;
+      }
+      * {
+        background: black;
+        color: white;
+      }
+      #productsItem {
+        display: none;
+        grid-auto-flow: column;
+        grid-column-gap: 50px;
+        background: white;
+        border: 1px solid yellow;
+        color: black;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+          rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+      }
+      #productsItem > div {
+        border: 1px solid teal;
+        background: white;
+        color: black;
+      }
+      .showProduct > div {
+        background: white;
+      }
+      .showProduct {
+        display: none;
+        background: white;
+        grid-auto-flow: column;
+        grid-column-gap: 50px;
+        background: white;
+        border: 1px solid yellow;
+        color: black;
+      }
+      .proImage {
+        background: white;
+      }
+      .Para {
+        background: white;
+        color: black;
+      }
+      #search {
+        background: white;
+        height: 10px;
+        padding: 5px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: none;
+      }
+      .nav2Img {
+        width: 10%;
+        height: 30px;
+        margin-top: 15px;
+        margin-left: 20px;
+      }
+    </style>
   </head>
   <body>
+    <div id="mainContainer"></div>
+    <!-- header -->
     <div id="outerContainer">
       <div id="left">
         <div id="viewImage"></div>
@@ -43,14 +114,31 @@
         </div>
         <div id="dis"></div>
         <div id="buttonContainer">
-          <button id="cartButton">ADD TO CART</button>
+          <button id="cartButton" >ADD TO CART</button>
           <button id="buyButton">BUY NOW</button>
         </div>
       </div>
     </div>
+    <div id="pContainer"></div>
   </body>
 </html>
-<script>
+<script type="module">
+
+import move_to_next from "../component/function.js";
+  import productHead from "../component/productHead.js";
+  let headContainer = document.getElementById("mainContainer");
+
+  headContainer.innerHTML = productHead();
+
+
+  import productFooter from "../component/ProductFooter.js";
+  let pfContainer = document.getElementById("pContainer");
+  console.log("pfContainer:", pfContainer);
+
+  pfContainer.innerHTML = productFooter();
+  // ----------------------------------------------------------------------------------------
+ 
+  
   let i = 0;
   let eleData = JSON.parse(localStorage.getItem("singleData"));
   let k = eleData.description;
@@ -60,7 +148,7 @@
   document.querySelector("#viewImage").append(image);
 
   eleData.imageUrl.forEach((ele) => {
-    console.log(ele);
+    // console.log(ele);
     let div1 = document.createElement("div");
 
     let image1 = document.createElement("img");
@@ -105,4 +193,22 @@
   document.querySelector("#price img").src = eleData.discountSticker;
 
   document.querySelector("#name h2").textContent=eleData.name;
+
+
+
+document.querySelector("button").addEventListener("click",()=>{
+
+ let cartDataLocal=JSON.parse(localStorage.getItem("cartDataLocal"));
+ cartDataLocal.push(eleData)
+   
+
+    localStorage.setItem("cartDataLocal",JSON.stringify(cartDataLocal))
+   
+  })
+
+  document.getElementById("buyButton").addEventListener("click",()=>{
+    localStorage.setItem("buyItem",JSON.stringify(eleData))
+    window.location.href="../cart/buy.htm"
+
+  })
 </script>

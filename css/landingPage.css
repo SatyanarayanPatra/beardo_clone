@@ -331,3 +331,27 @@ h1 {
 }
 
 /* slider */
+#navbarslider {
+  height: auto;
+  padding: 4%;
+}
+#divContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px 8%;
+  justify-content: space-around;
+}
+
+#divContainer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+
+  border-radius: 4px;
+}
+
+#divContainer a:hover {
+  color: green;
+  text-decoration: underline red;
+}
