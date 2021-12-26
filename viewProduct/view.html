@@ -202,7 +202,7 @@ import move_to_next from "../component/function.js";
 
 document.querySelector("button").addEventListener("click",()=>{
 
- let cartDataLocal=JSON.parse(localStorage.getItem("cartDataLocal"));
+ let cartDataLocal=JSON.parse(localStorage.getItem("cartDataLocal"))||[];
  cartDataLocal.push(eleData)
    
 
