@@ -3,6 +3,9 @@
 
 ##### Beardo is a  Ahmedabad-based  men's grooming brand and start-up that sells beard oils, beard waxes, soaps and other grooming products. It is owned by Zed Lifestyle Pvt. Ltd. Beardo was founded in 2015 by Ashutosh Valani and Priyank Shah.
 
+##Live
+https://beardo-clone.vercel.app/
+
 
 ## Authors
 
