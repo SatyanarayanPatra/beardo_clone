@@ -7,6 +7,7 @@
 https://beardo-clone.vercel.app/
 
 <h3>Github</h3>
+https://github.com/kanhaiya-k/beardo_clone
 
 
 
